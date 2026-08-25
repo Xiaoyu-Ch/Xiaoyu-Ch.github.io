@@ -4,7 +4,7 @@ title: personal
 permalink: /personal/
 description: Life outside the lab and the codebase.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 The CV and projects pages cover the work. This page is the rest of it.

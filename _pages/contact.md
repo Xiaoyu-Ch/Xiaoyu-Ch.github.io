@@ -4,7 +4,7 @@ title: contact
 permalink: /contact/
 description: Get in touch.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 <div class="post">
@@ -12,6 +12,7 @@ nav_order: 5
 
   <ul>
     <li><strong>Email:</strong> <a href="mailto:xiaoyc@umich.edu">xiaoyc@umich.edu</a></li>
+    <li><strong>Phone:</strong> <a href="tel:+13527218534">352-721-8534</a></li>
     <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/xiaoyu-tom-chen-658251335" target="_blank" rel="noopener noreferrer">linkedin.com/in/xiaoyu-tom-chen-658251335</a></li>
     <li><strong>GitHub:</strong> <a href="https://github.com/Xiaoyu-Ch" target="_blank" rel="noopener noreferrer">github.com/Xiaoyu-Ch</a></li>
     <li><strong>Location:</strong> Ann Arbor, MI</li>

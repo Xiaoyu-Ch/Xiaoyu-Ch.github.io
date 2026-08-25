@@ -1,14 +1,10 @@
 name: Render a CV
+# Automatic push trigger disabled: this site links a hand-designed LaTeX
+# resume (assets/pdf/resume.pdf) from the CV page instead of a RenderCV
+# output, so an auto-commit on every _data/cv.yml push would just be noise.
+# Run manually (Actions tab -> Render a CV -> Run workflow) if a RenderCV
+# PDF is ever wanted again.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:

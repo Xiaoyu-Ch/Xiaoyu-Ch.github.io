@@ -34,4 +34,4 @@ docker compose up -d
 ## To do
 
 - [ ] Add real headshot to `assets/img/prof_pic.jpg`
-- [x] Resume PDF: auto-generated from `_data/cv.yml` by `.github/workflows/render-cv.yml` on every push to `main`
+- [x] Resume PDF: hand-designed LaTeX resume at `assets/pdf/resume.pdf`, linked from the CV page

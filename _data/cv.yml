@@ -2,6 +2,7 @@ cv:
   name: Xiaoyu Chen
   label: CS Student, Engineer, ML Systems & Safety Research
   email: xiaoyc@umich.edu
+  phone: "+1-352-721-8534"
   location: Ann Arbor, MI
   image: ""
   summary: CS student at the University of Michigan (transferred from the University of Florida), building production ML/systems infrastructure. Currently working on LLM agent safety research (Citi-backed, UF TEA Lab) and adaptive safety policy evaluation (AdaptGuard, OrderLab, targeting OSDI 2026). Interested in both PhD study and industry SWE/ML infrastructure roles.
@@ -74,6 +75,14 @@ cv:
         highlights:
           - "Combined VQ-VAE discrete latent encoding with doctor-patient dialogue corpora to improve semantic controllability and interpretability of medical dialogue generation, outperforming contemporary models by 15% BLEU in this domain; presented orally at AICCONF 2026 (IEEE SMC)"
 
+      - company: LLM Hate Speech Detection, University of Florida
+        position: Research Participant
+        location: Gainesville, FL
+        start_date: 2025-05
+        end_date: 2025-07
+        highlights:
+          - "Designed an Elo-based scoring model converting binary human preference labels into a continuous 0-10 scale; integrated into LLaMA-4 and DeepSeek fine-tuning pipelines and annotated 450 dialogue responses for CRetor, a Mandarin counter-speech dataset"
+
       - company: FlagIt
         position: Web Developer Intern
         location: Remote
@@ -112,7 +121,7 @@ cv:
         publisher: CONF-CIAP 2024 (Theoretical and Natural Science; Scopus, CPCI)
         releaseDate: 2024-01-01
 
-      - title: "CRetor: A Mandarin Counter-Speech Dataset"
+      - title: "CRetor: A Mandarin Counter-Speech Dataset Annotated for Rhetorical Strategy"
         authors:
           - Xiaoyu Chen
           - et al.
