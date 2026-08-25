@@ -2,6 +2,7 @@
 layout: page
 title: Muted
 description: AI-first English speaking practice app, solo-built end to end
+permalink: /projects/muted/
 importance: 1
 category: work
 ---

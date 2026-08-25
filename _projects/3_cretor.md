@@ -2,6 +2,7 @@
 layout: page
 title: "CRetor: Mandarin Counter-Speech Dataset"
 description: An Elo-based scoring model for LLM fine-tuning on counter-speech
+permalink: /projects/cretor/
 importance: 3
 category: work
 related_publications: true

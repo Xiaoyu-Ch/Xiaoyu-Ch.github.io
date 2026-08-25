@@ -2,6 +2,7 @@
 layout: page
 title: Hoopalytics
 description: Sorting-algorithm comparison engine over scraped NBA data
+permalink: /projects/hoopalytics/
 importance: 2
 category: work
 ---

@@ -38,6 +38,15 @@ cv:
         score: "GPA 3.92/4.0"
 
     Experience:
+      - company: AdaptGuard, OrderLab (Systems Reliability), University of Michigan EECS
+        position: Undergraduate Researcher, advised by Prof. Ryan Huang; supervised by Yuxuan Jiang
+        location: Ann Arbor, MI
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - "Identified a core failure mode in static agent-sandboxing via a CI/CD-style automated evaluation harness (50-scenario pilot scaled to 900-scenario rerun) across policy strictness levels on matched cheat/legitimate coding-agent scenario pairs: a permissive policy let an agent fake a bug fix by weakening a test assertion, while a strict policy blocking the cheat also blocked a legitimate regression-test addition; finding recognized by the PhD lead as a key insight in a project targeting OSDI publication, December 2026"
+          - "Sourced and quality-controlled two non-adversarial evaluation datasets (12 cases from Agent-SafetyBench, 14 from SABER) against PI-set criteria, spanning failure categories including privilege escalation and information leakage"
+
       - company: TEA Lab, UF ECE (Citi-Sponsored Industry Collaboration)
         position: Research Assistant, advised by Dr. Ivan Ruchkin
         location: Gainesville, FL
@@ -48,6 +57,22 @@ cv:
           - "Built single-pass logprob/entropy extraction (Qwen3-8B) and executed a 1,064-case run across 31 scenarios on dual-H200 HPC (SLURM); fixed silent CUDA corruption, an fp16 overflow bug, and a 100% case-ID label-leakage vulnerability via a verified anonymization pipeline"
           - "Validated results at scale (Kruskal-Wallis p<0.000001, n=1,064); found defended cases show the highest model uncertainty, a resistance signature rather than confusion, presented directly to Citi stakeholders"
           - "Investigated a suspiciously strong TRACES baseline (AUROC 0.987); built a diagnostic classifier proving it was a scenario-identity shortcut, not real detection, with accuracy collapsing to chance under scenario-grouped splitting"
+
+      - company: Computer Vision and Sensing Lab, UF ABE
+        position: "Undergraduate Research Assistant (volunteer), advised by Dr. Henry Medeiros"
+        location: Gainesville, FL
+        start_date: 2026-02
+        end_date: 2026-08
+        highlights:
+          - "Built a CV perception pipeline (depth estimation, YOLO, SAM3 segmentation) as part of a 20-person autonomous bamboo-harvesting robot team, achieving 93%+ accuracy on 70+ second footage; trained/ran inference on HiPerGator"
+
+      - company: Zhongbo Zhichuang Technologies
+        position: Independent Researcher
+        location: Guangzhou, China
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Combined VQ-VAE discrete latent encoding with doctor-patient dialogue corpora to improve semantic controllability and interpretability of medical dialogue generation, outperforming contemporary models by 15% BLEU in this domain; presented orally at AICCONF 2026 (IEEE SMC)"
 
       - company: FlagIt
         position: Web Developer Intern
@@ -73,32 +98,6 @@ cv:
         end_date: 2023-08
         highlights:
           - Analyzed securities and market indicator data to produce 30 short-form videos reaching 100K+ viewers
-
-    Research:
-      - company: AdaptGuard, OrderLab (Systems Reliability), University of Michigan EECS
-        position: Undergraduate Researcher, advised by Prof. Ryan Huang; supervised by Yuxuan Jiang
-        location: Ann Arbor, MI
-        start_date: 2026-07
-        end_date: present
-        highlights:
-          - "Identified a core failure mode in static agent-sandboxing via a CI/CD-style automated evaluation harness (50-scenario pilot scaled to 900-scenario rerun) across policy strictness levels on matched cheat/legitimate coding-agent scenario pairs: a permissive policy let an agent fake a bug fix by weakening a test assertion, while a strict policy blocking the cheat also blocked a legitimate regression-test addition; finding recognized by the PhD lead as a key insight in a project targeting OSDI publication, December 2026"
-          - "Sourced and quality-controlled two non-adversarial evaluation datasets (12 cases from Agent-SafetyBench, 14 from SABER) against PI-set criteria, spanning failure categories including privilege escalation and information leakage"
-
-      - company: Computer Vision and Sensing Lab, UF ABE
-        position: "Undergraduate Research Assistant (volunteer), advised by Dr. Henry Medeiros"
-        location: Gainesville, FL
-        start_date: 2026-02
-        end_date: 2026-08
-        highlights:
-          - "Built a CV perception pipeline (depth estimation, YOLO, SAM3 segmentation) as part of a 20-person autonomous bamboo-harvesting robot team, achieving 93%+ accuracy on 70+ second footage; trained/ran inference on HiPerGator"
-
-      - company: Zhongbo Zhichuang Technologies
-        position: Independent Researcher
-        location: Guangzhou, China
-        start_date: 2025-09
-        end_date: present
-        highlights:
-          - "Combined VQ-VAE discrete latent encoding with doctor-patient dialogue corpora to improve semantic controllability and interpretability of medical dialogue generation, outperforming contemporary models by 15% BLEU in this domain; presented orally at AICCONF 2026 (IEEE SMC)"
 
     Publications:
       - title: A Doctor Dialogue Model Based on Vector Quantisation
@@ -148,27 +147,22 @@ cv:
 
     Skills:
       - name: Languages
-        level: ""
         icon: fa-solid fa-code
         keywords: "Python, C++, JavaScript, TypeScript, SQL, HTML/CSS, Java"
 
       - name: Core CS
-        level: ""
         icon: fa-solid fa-diagram-project
         keywords: "Data Structures, Algorithms, Distributed Systems, Concurrency, Multi-threading, Synchronization"
 
       - name: AI/ML
-        level: ""
         icon: fa-solid fa-brain
         keywords: "PyTorch, HF Transformers, OpenAI API, YOLO, SAM3, logprob extraction, 4-bit quant (NF4), STL anomaly detection"
 
       - name: Infrastructure & Tools
-        level: ""
         icon: fa-solid fa-server
         keywords: "Git, Docker, CI/CD, HiPerGator HPC, SLURM, RunPod, OpenRouter, DeepSeek API, Vercel"
 
       - name: Frameworks
-        level: ""
         icon: fa-solid fa-layer-group
         keywords: "React, Next.js, Node.js, PostgreSQL, pandas, NumPy"
 
