@@ -1,0 +1,189 @@
+cv:
+  name: Xiaoyu Chen
+  label: CS Student, Engineer, ML Systems & Safety Research
+  email: xiaoyc@umich.edu
+  location: Ann Arbor, MI
+  image: ""
+  summary: CS student at the University of Michigan (transferred from the University of Florida), building production ML/systems infrastructure. Currently working on LLM agent safety research (Citi-backed, UF TEA Lab) and adaptive safety policy evaluation (AdaptGuard, OrderLab, targeting OSDI 2026). Interested in both PhD study and industry SWE/ML infrastructure roles.
+
+  social_networks:
+    - network: GitHub
+      username: Xiaoyu-Ch
+    - network: LinkedIn
+      username: xiaoyu-tom-chen-658251335
+
+  address:
+    city: Ann Arbor
+    region: Michigan
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of Michigan
+        location: Ann Arbor, MI
+        area: Computer Science
+        studyType: B.S. (incoming transfer)
+        start_date: 2026
+        end_date: 2028
+        score: "GPA 4.0/4.0"
+        highlights:
+          - Expected graduation May 2028
+
+      - institution: University of Florida
+        location: Gainesville, FL
+        area: Computer Science
+        studyType: B.S.
+        start_date: 2024-08
+        end_date: 2026-05
+        score: "GPA 3.92/4.0"
+
+    Experience:
+      - company: TEA Lab, UF ECE (Citi-Sponsored Industry Collaboration)
+        position: Research Assistant, advised by Dr. Ivan Ruchkin
+        location: Gainesville, FL
+        start_date: 2026-05
+        end_date: present
+        summary: Own the full scalable data pipeline for a Citi-sponsored LLM agentic safety project (FinVault benchmark).
+        highlights:
+          - "Built single-pass logprob/entropy extraction (Qwen3-8B) and executed a 1,064-case run across 31 scenarios on dual-H200 HPC (SLURM); fixed silent CUDA corruption, an fp16 overflow bug, and a 100% case-ID label-leakage vulnerability via a verified anonymization pipeline"
+          - "Validated results at scale (Kruskal-Wallis p<0.000001, n=1,064); found defended cases show the highest model uncertainty, a resistance signature rather than confusion, presented directly to Citi stakeholders"
+          - "Investigated a suspiciously strong TRACES baseline (AUROC 0.987); built a diagnostic classifier proving it was a scenario-identity shortcut, not real detection, with accuracy collapsing to chance under scenario-grouped splitting"
+
+      - company: FlagIt
+        position: Web Developer Intern
+        location: Remote
+        start_date: 2024-08
+        end_date: 2025-01
+        highlights:
+          - Built frontend UI with HTML/CSS and redesigned backend SQL schema to scale to 20+ users
+          - Collaborated with a team of 5 via Git
+
+      - company: Chao Long Solar Technologies
+        position: Engineering Intern
+        location: China
+        start_date: 2023-12
+        end_date: 2024-01
+        highlights:
+          - Analyzed manufacturing process data and proposed data-driven workflow improvements, achieving a 3.6% efficiency gain, under engineer mentorship
+
+      - company: Shanghai Howbuy Fund Sales Co., Ltd.
+        position: Design Department Intern
+        location: Shanghai, China
+        start_date: 2023-07
+        end_date: 2023-08
+        highlights:
+          - Analyzed securities and market indicator data to produce 30 short-form videos reaching 100K+ viewers
+
+    Research:
+      - company: AdaptGuard, OrderLab (Systems Reliability), University of Michigan EECS
+        position: Undergraduate Researcher, advised by Prof. Ryan Huang; supervised by Yuxuan Jiang
+        location: Ann Arbor, MI
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - "Identified a core failure mode in static agent-sandboxing via a CI/CD-style automated evaluation harness (50-scenario pilot scaled to 900-scenario rerun) across policy strictness levels on matched cheat/legitimate coding-agent scenario pairs: a permissive policy let an agent fake a bug fix by weakening a test assertion, while a strict policy blocking the cheat also blocked a legitimate regression-test addition; finding recognized by the PhD lead as a key insight in a project targeting OSDI publication, December 2026"
+          - "Sourced and quality-controlled two non-adversarial evaluation datasets (12 cases from Agent-SafetyBench, 14 from SABER) against PI-set criteria, spanning failure categories including privilege escalation and information leakage"
+
+      - company: Computer Vision and Sensing Lab, UF ABE
+        position: "Undergraduate Research Assistant (volunteer), advised by Dr. Henry Medeiros"
+        location: Gainesville, FL
+        start_date: 2026-02
+        end_date: 2026-08
+        highlights:
+          - "Built a CV perception pipeline (depth estimation, YOLO, SAM3 segmentation) as part of a 20-person autonomous bamboo-harvesting robot team, achieving 93%+ accuracy on 70+ second footage; trained/ran inference on HiPerGator"
+
+      - company: Zhongbo Zhichuang Technologies
+        position: Independent Researcher
+        location: Guangzhou, China
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Combined VQ-VAE discrete latent encoding with doctor-patient dialogue corpora to improve semantic controllability and interpretability of medical dialogue generation, outperforming contemporary models by 15% BLEU in this domain; presented orally at AICCONF 2026 (IEEE SMC)"
+
+    Publications:
+      - title: A Doctor Dialogue Model Based on Vector Quantisation
+        authors:
+          - Xiaoyu Chen
+        publisher: AICCONF 2026 (IEEE SMC), Prague. Oral presentation.
+        releaseDate: 2026-01-01
+
+      - title: "From Theory to Reality: The Quest for Gravitational Waves"
+        authors:
+          - Xiaoyu Chen
+        publisher: CONF-CIAP 2024 (Theoretical and Natural Science; Scopus, CPCI)
+        releaseDate: 2024-01-01
+
+      - title: "CRetor: A Mandarin Counter-Speech Dataset"
+        authors:
+          - Xiaoyu Chen
+          - et al.
+        publisher: Submitted to ACL Rolling Review (ARR)
+        releaseDate: 2025-01-01
+
+    Projects:
+      - name: Muted (YaBaYingYu)
+        summary: Solo-built AI-first English speaking practice app for the Asian market. Next.js 14, Supabase (PostgreSQL), DeepSeek API, Web Speech API, Stripe.
+        highlights:
+          - "4 AI tutor personas, real-time grammar correction, spaced-repetition vocabulary, and exam-specific practice modes (IELTS/TOEFL/Gaokao); 10-user beta"
+          - "Re-architected the voice pipeline after finding OpenAI's Realtime API cost-prohibitive at scale (~$0.30/min); redesigned around browser-native Web Speech API plus DeepSeek text completion, cutting per-minute cost over 95% (~$0.30 to $0.01-0.02)"
+          - "Found and fixed a privilege-escalation vulnerability allowing users to self-upgrade subscription tier via client-side database calls; implemented column-level permission controls to close the gap"
+        start_date: 2026-01-01
+        end_date: present
+
+      - name: Hoopalytics
+        summary: React, Vite, Django, Python, Tailwind CSS. github.com/Xiaoyu-Ch/hoopalytics
+        highlights:
+          - "Self-implemented merge/heap sort comparison engine (5,000+ crawler-scraped data points); merge sort cut sorting-time fluctuation 9% vs. heap sort"
+          - "Custom weighted NBA metric formula; 3-person team via GitHub"
+        start_date: 2025-09-01
+        end_date: 2025-11-01
+
+      - name: "CRetor: Mandarin Counter-Speech Dataset"
+        summary: LLaMA-4, DeepSeek, Python.
+        highlights:
+          - "Designed an Elo-based scoring model converting binary human preference labels into a continuous 0-10 scale"
+          - "Integrated into LLaMA-4 and DeepSeek fine-tuning pipelines and annotated 450 dialogue responses"
+        start_date: 2025-05-01
+        end_date: 2025-07-01
+
+    Skills:
+      - name: Languages
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "Python, C++, JavaScript, TypeScript, SQL, HTML/CSS, Java"
+
+      - name: Core CS
+        level: ""
+        icon: fa-solid fa-diagram-project
+        keywords: "Data Structures, Algorithms, Distributed Systems, Concurrency, Multi-threading, Synchronization"
+
+      - name: AI/ML
+        level: ""
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, HF Transformers, OpenAI API, YOLO, SAM3, logprob extraction, 4-bit quant (NF4), STL anomaly detection"
+
+      - name: Infrastructure & Tools
+        level: ""
+        icon: fa-solid fa-server
+        keywords: "Git, Docker, CI/CD, HiPerGator HPC, SLURM, RunPod, OpenRouter, DeepSeek API, Vercel"
+
+      - name: Frameworks
+        level: ""
+        icon: fa-solid fa-layer-group
+        keywords: "React, Next.js, Node.js, PostgreSQL, pandas, NumPy"
+
+    Languages:
+      - name: Mandarin
+        summary: "Native"
+      - name: English
+        summary: "Fluent"
+      - name: Spanish
+        summary: "Intermediate"
+      - name: French
+        summary: "Intermediate"
+      - name: German
+        summary: "Beginner"
+      - name: Japanese
+        summary: "Beginner"
+      - name: Portuguese
+        summary: "Beginner"
