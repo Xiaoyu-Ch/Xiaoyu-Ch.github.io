@@ -32,3 +32,66 @@ Right now I split my time between two things. At the [TEA Lab](https://tea.ece.u
 Outside the lab, I build things end to end: [Muted](/projects/muted/), an AI-first English speaking practice app I designed, built, and shipped solo; [Hoopalytics](/projects/hoopalytics/), a sorting-algorithm comparison engine over scraped NBA data; and [CRetor](/projects/cretor/), a Mandarin counter-speech dataset built for LLM fine-tuning.
 
 I'm interested in both PhD study and industry roles in software engineering and ML infrastructure. My [CV](/cv/) has the full picture, and my [publications](/publications/) page has citations. If you want to reach me, [email](mailto:xiaoyc@umich.edu) is best, or find me on [GitHub](https://github.com/Xiaoyu-Ch) and [LinkedIn](https://www.linkedin.com/in/xiaoyu-tom-chen-658251335).
+
+<div class="about-cube-wrap" aria-hidden="true">
+  <div class="about-cube-scene">
+    <div class="about-cube">
+      <div class="about-cube-face about-cube-front"></div>
+      <div class="about-cube-face about-cube-back"></div>
+      <div class="about-cube-face about-cube-right"></div>
+      <div class="about-cube-face about-cube-left"></div>
+      <div class="about-cube-face about-cube-top"></div>
+      <div class="about-cube-face about-cube-bottom"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about-cube-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0.5rem;
+    opacity: 0.7;
+  }
+  .about-cube-scene {
+    width: 70px;
+    height: 70px;
+    perspective: 500px;
+  }
+  .about-cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: about-cube-spin 16s linear infinite;
+  }
+  .about-cube-face {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--global-theme-color);
+    background: transparent;
+  }
+  .about-cube-front { transform: translateZ(35px); }
+  .about-cube-back { transform: translateZ(-35px) rotateY(180deg); }
+  .about-cube-right { transform: rotateY(90deg) translateZ(35px); }
+  .about-cube-left { transform: rotateY(-90deg) translateZ(35px); }
+  .about-cube-top { transform: rotateX(90deg) translateZ(35px); }
+  .about-cube-bottom { transform: rotateX(-90deg) translateZ(35px); }
+  @keyframes about-cube-spin {
+    from { transform: rotateX(0deg) rotateY(0deg); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .about-cube {
+      animation: none;
+      transform: rotateX(-20deg) rotateY(30deg);
+    }
+  }
+</style>
+
+<script>
+  console.log("%cLooking at the source? Good instinct.", "font-size: 14px; font-weight: bold;");
+  console.log("This site is a Jekyll/al-folio build. Source: https://github.com/Xiaoyu-Ch/Xiaoyu-Ch.github.io");
+  console.log("If you're hiring or admitting PhD students: xiaoyc@umich.edu");
+</script>
