@@ -90,8 +90,82 @@ I'm interested in both PhD study and industry roles in software engineering and 
   }
 </style>
 
+<style>
+  @keyframes about-egg-bounce {
+    0% { transform: translateX(-10vw) translateY(0); }
+    15% { transform: translateX(15vw) translateY(-38vh); }
+    30% { transform: translateX(35vw) translateY(0); }
+    45% { transform: translateX(55vw) translateY(-22vh); }
+    60% { transform: translateX(75vw) translateY(0); }
+    75% { transform: translateX(95vw) translateY(-10vh); }
+    100% { transform: translateX(115vw) translateY(0); }
+  }
+  .about-egg-ball {
+    position: fixed;
+    left: 0;
+    bottom: 15vh;
+    font-size: 2.5rem;
+    z-index: 9999;
+    pointer-events: none;
+    animation: about-egg-bounce 2.2s ease-in-out forwards;
+  }
+  .about-egg-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 8vh;
+    transform: translateX(-50%);
+    background: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    border: 1px solid var(--global-theme-color);
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.9rem;
+    z-index: 9999;
+    opacity: 0;
+    animation: about-egg-toast-fade 3.5s ease-in-out forwards;
+  }
+  @keyframes about-egg-toast-fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+
 <script>
   console.log("%cLooking at the source? Good instinct.", "font-size: 14px; font-weight: bold;");
   console.log("This site is a Jekyll/al-folio build. Source: https://github.com/Xiaoyu-Ch/Xiaoyu-Ch.github.io");
   console.log("If you're hiring or admitting PhD students: xiaoyc@umich.edu");
+  console.log("(Psst: there's also a Konami code on this page.)");
+
+  (function () {
+    var code = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+    var pos = 0;
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    document.addEventListener("keydown", function (e) {
+      var key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+      pos = key === code[pos] ? pos + 1 : (key === code[0] ? 1 : 0);
+      if (pos === code.length) {
+        pos = 0;
+        fire();
+      }
+    });
+
+    function fire() {
+      var toast = document.createElement("div");
+      toast.className = "about-egg-toast";
+      toast.textContent = "Merge sort still beats heap sort though.";
+      document.body.appendChild(toast);
+      setTimeout(function () { toast.remove(); }, 3600);
+
+      if (reduceMotion) return;
+      var ball = document.createElement("div");
+      ball.className = "about-egg-ball";
+      ball.textContent = "🏀";
+      ball.setAttribute("aria-hidden", "true");
+      document.body.appendChild(ball);
+      setTimeout(function () { ball.remove(); }, 2300);
+    }
+  })();
 </script>
