@@ -1,0 +1,383 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Hoopalytics | Xiaoyu Tom Chen </title> <meta name="author" content="Xiaoyu Tom Chen"> <meta name="description" content="Sorting-algorithm comparison engine over scraped NBA data"> <meta name="keywords" content="computer science, machine learning, systems, LLM safety, research, software engineer"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AD&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiaoyu-ch.github.io/projects/hoopalytics/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Xiaoyu</span> Tom Chen </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">personal </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Hoopalytics</h1> <p class="post-description">Sorting-algorithm comparison engine over scraped NBA data</p> </header> <article> <p><strong>Stack:</strong> React, Vite, Django, Python, Tailwind CSS <strong>Timeline:</strong> Sep 2025, Nov 2025 <strong>Team:</strong> 3-person team, via GitHub <strong>Code:</strong> <a href="https://github.com/Xiaoyu-Ch/hoopalytics" rel="external nofollow noopener" target="_blank">github.com/Xiaoyu-Ch/hoopalytics</a></p> <p>Hoopalytics applies core data structures and algorithms to a real dataset: 5,000+ crawler-scraped NBA player data points.</p> <h3 id="what-i-built">What I built</h3> <ul> <li>Self-implemented merge sort and heap sort, benchmarked head to head as a sorting-algorithm comparison engine over the scraped dataset</li> <li>Merge sort cut sorting-time fluctuation by 9% versus heap sort on this data</li> <li>A custom weighted NBA metric formula used to rank and compare players</li> </ul> <p>The project is a full-stack build: a Django/Python backend serving the sorted and scored data, and a React/Vite frontend styled with Tailwind CSS for browsing it.</p> <h3 id="try-it-merge-sort-vs-heap-sort">Try it: merge sort vs. heap sort</h3> <p>A live, in-browser race on a random array, the same two algorithms this project benchmarks. Lower comparison count wins each run; the split varies with the shuffle, which is the point.</p> <div id="sort-race" class="sort-race-widget"> <div class="sort-race-controls"> <button type="button" id="sort-race-btn" class="sort-race-button">Shuffle &amp; race</button> <span id="sort-race-status" class="sort-race-status" role="status" aria-live="polite">Ready.</span> </div> <div class="sort-race-tracks"> <div class="sort-race-track"> <div class="sort-race-label">Merge sort <span id="sort-race-merge-count">0</span> comparisons</div> <div id="sort-race-merge-bars" class="sort-race-bars"></div> </div> <div class="sort-race-track"> <div class="sort-race-label">Heap sort <span id="sort-race-heap-count">0</span> comparisons</div> <div id="sort-race-heap-bars" class="sort-race-bars"></div> </div> </div> </div> <style>
+  .sort-race-widget {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.5rem;
+    background: var(--global-card-bg-color);
+  }
+  .sort-race-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .sort-race-button {
+    background: var(--global-theme-color);
+    color: var(--global-bg-color);
+    border: none;
+    border-radius: 0.35rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .sort-race-button:hover {
+    opacity: 0.85;
+  }
+  .sort-race-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .sort-race-status {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+  .sort-race-tracks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  @media (min-width: 700px) {
+    .sort-race-tracks {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .sort-race-label {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.4rem;
+  }
+  .sort-race-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 140px;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  .sort-race-bar {
+    flex: 1 1 0;
+    background: var(--global-theme-color);
+    opacity: 0.5;
+    transition: height 0.05s linear;
+  }
+  .sort-race-bar.is-active {
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sort-race-bar {
+      transition: none;
+    }
+  }
+</style> <script>
+  (function () {
+    var container = document.getElementById("sort-race");
+    if (!container) return;
+
+    var SIZE = 40;
+    var btn = document.getElementById("sort-race-btn");
+    var status = document.getElementById("sort-race-status");
+    var mergeBarsEl = document.getElementById("sort-race-merge-bars");
+    var heapBarsEl = document.getElementById("sort-race-heap-bars");
+    var mergeCountEl = document.getElementById("sort-race-merge-count");
+    var heapCountEl = document.getElementById("sort-race-heap-count");
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function randomArray(n) {
+      var a = [];
+      for (var i = 0; i < n; i++) a.push(Math.floor(Math.random() * 98) + 2);
+      return a;
+    }
+
+    function renderBars(el, arr, activeIdx) {
+      var bars = el.children;
+      if (bars.length !== arr.length) {
+        el.innerHTML = "";
+        for (var i = 0; i < arr.length; i++) {
+          var d = document.createElement("div");
+          d.className = "sort-race-bar";
+          el.appendChild(d);
+        }
+        bars = el.children;
+      }
+      for (var j = 0; j < arr.length; j++) {
+        bars[j].style.height = arr[j] + "%";
+        bars[j].classList.toggle("is-active", activeIdx.indexOf(j) !== -1);
+      }
+    }
+
+    // Generator-style step recorders: each sort records {array snapshot, active indices, comparisons}
+    function recordMergeSort(input) {
+      var steps = [];
+      var comparisons = 0;
+      var a = input.slice();
+
+      function merge(lo, mid, hi) {
+        var left = a.slice(lo, mid + 1);
+        var right = a.slice(mid + 1, hi + 1);
+        var i = 0, j = 0, k = lo;
+        while (i < left.length && j < right.length) {
+          comparisons++;
+          if (left[i] <= right[j]) {
+            a[k] = left[i++];
+          } else {
+            a[k] = right[j++];
+          }
+          steps.push({ arr: a.slice(), active: [k], count: comparisons });
+          k++;
+        }
+        while (i < left.length) {
+          a[k] = left[i++];
+          steps.push({ arr: a.slice(), active: [k], count: comparisons });
+          k++;
+        }
+        while (j < right.length) {
+          a[k] = right[j++];
+          steps.push({ arr: a.slice(), active: [k], count: comparisons });
+          k++;
+        }
+      }
+
+      function sort(lo, hi) {
+        if (lo >= hi) return;
+        var mid = Math.floor((lo + hi) / 2);
+        sort(lo, mid);
+        sort(mid + 1, hi);
+        merge(lo, mid, hi);
+      }
+
+      sort(0, a.length - 1);
+      return steps;
+    }
+
+    function recordHeapSort(input) {
+      var steps = [];
+      var comparisons = 0;
+      var a = input.slice();
+      var n = a.length;
+
+      function swap(i, j) {
+        var t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+
+      function heapify(size, root) {
+        var largest = root;
+        var l = 2 * root + 1;
+        var r = 2 * root + 2;
+        if (l < size) {
+          comparisons++;
+          if (a[l] > a[largest]) largest = l;
+        }
+        if (r < size) {
+          comparisons++;
+          if (a[r] > a[largest]) largest = r;
+        }
+        if (largest !== root) {
+          swap(root, largest);
+          steps.push({ arr: a.slice(), active: [root, largest], count: comparisons });
+          heapify(size, largest);
+        }
+      }
+
+      for (var i = Math.floor(n / 2) - 1; i >= 0; i--) heapify(n, i);
+      for (var end = n - 1; end > 0; end--) {
+        swap(0, end);
+        steps.push({ arr: a.slice(), active: [0, end], count: comparisons });
+        heapify(end, 0);
+      }
+      return steps;
+    }
+
+    function playSteps(el, countEl, steps, finalArr, onDone) {
+      if (reduceMotion || steps.length === 0) {
+        renderBars(el, finalArr, []);
+        countEl.textContent = steps.length ? steps[steps.length - 1].count : 0;
+        onDone();
+        return;
+      }
+      var i = 0;
+      function tick() {
+        if (i >= steps.length) {
+          renderBars(el, finalArr, []);
+          onDone();
+          return;
+        }
+        renderBars(el, steps[i].arr, steps[i].active);
+        countEl.textContent = steps[i].count;
+        i++;
+        setTimeout(tick, 16);
+      }
+      tick();
+    }
+
+    function race() {
+      btn.disabled = true;
+      status.textContent = "Racing...";
+      var data = randomArray(SIZE);
+      renderBars(mergeBarsEl, data, []);
+      renderBars(heapBarsEl, data, []);
+      mergeCountEl.textContent = "0";
+      heapCountEl.textContent = "0";
+
+      var mergeSteps = recordMergeSort(data);
+      var heapSteps = recordHeapSort(data);
+      var sorted = data.slice().sort(function (a, b) { return a - b; });
+
+      var done = 0;
+      function finish(label) {
+        done++;
+        if (done === 1) status.textContent = label + " finished first.";
+        if (done === 2) {
+          var mergeCount = mergeSteps.length ? mergeSteps[mergeSteps.length - 1].count : 0;
+          var heapCount = heapSteps.length ? heapSteps[heapSteps.length - 1].count : 0;
+          var winner = mergeCount < heapCount ? "Merge sort" : heapCount < mergeCount ? "Heap sort" : "Tie";
+          status.textContent = winner + " used fewer comparisons this run (merge: " + mergeCount + ", heap: " + heapCount + ").";
+          btn.disabled = false;
+        }
+      }
+
+      playSteps(mergeBarsEl, mergeCountEl, mergeSteps, sorted, function () { finish("Merge sort"); });
+      playSteps(heapBarsEl, heapCountEl, heapSteps, sorted, function () { finish("Heap sort"); });
+    }
+
+    btn.addEventListener("click", race);
+    race();
+  })();
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Xiaoyu Tom Chen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, research, publications, and skills.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "full citations, in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Things I&#39;ve built end to end, from idea to shipped product.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-personal",
+          title: "personal",
+          description: "Life outside the lab and the codebase.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/personal/";
+          },
+        },{id: "nav-contact",
+          title: "contact",
+          description: "Get in touch.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-muted",
+          title: 'Muted',
+          description: "AI-first English speaking practice app, solo-built end to end",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/muted/";
+            },},{id: "projects-hoopalytics",
+          title: 'Hoopalytics',
+          description: "Sorting-algorithm comparison engine over scraped NBA data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hoopalytics/";
+            },},{id: "projects-cretor-mandarin-counter-speech-dataset",
+          title: 'CRetor: Mandarin Counter-Speech Dataset',
+          description: "An Elo-based scoring model for LLM fine-tuning on counter-speech",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cretor/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/resume.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%69%61%6F%79%63@%75%6D%69%63%68.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/Xiaoyu-Ch", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/xiaoyu-tom-chen-658251335", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
