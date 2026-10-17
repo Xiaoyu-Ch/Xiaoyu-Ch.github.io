@@ -14,6 +14,8 @@ Three builds where a clean idea ran into a messy constraint, which is usually wh
 the interesting part of a project starts.
 </p>
 
+<h2>The three main ones</h2>
+
 <div class="tom-cards">
   <article class="tom-card">
     <img class="tom-card-art" src="{{ '/assets/svg/project-muted.svg' | relative_url }}" width="600" height="280" loading="lazy"

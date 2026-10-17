@@ -218,11 +218,8 @@
   var elEndText = root.querySelector("[data-game-end-text]");
   var elEndList = root.querySelector("[data-game-end-list]");
   var elAgain = root.querySelector("[data-game-again]");
-  var elNoscript = document.querySelector("[data-game-noscript]");
 
   if (!elWord || !elChoices || !elNext) return;
-  if (elNoscript) elNoscript.hidden = true;
-  root.hidden = false;
 
   var deck = [];
   var index = 0;
@@ -241,18 +238,14 @@
     return a;
   }
 
-  function buildChoices() {
-    elChoices.textContent = "";
-    LANGS.forEach(function (lang, i) {
-      var btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "guess-choice";
-      btn.setAttribute("data-lang", lang.code);
-      btn.innerHTML = '<span class="guess-choice-key" aria-hidden="true">' + (i + 1) + "</span>" + lang.name;
+  // The seven buttons are rendered by the page, not built here, so the layout is
+  // final on first paint and the page does not shift when the script runs.
+  function bindChoices() {
+    Array.prototype.forEach.call(elChoices.children, function (btn) {
+      var code = btn.getAttribute("data-lang");
       btn.addEventListener("click", function () {
-        answer(lang.code);
+        answer(code);
       });
-      elChoices.appendChild(btn);
     });
   }
 
@@ -399,6 +392,6 @@
     }
   });
 
-  buildChoices();
+  bindChoices();
   start();
 })();

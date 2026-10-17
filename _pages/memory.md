@@ -15,7 +15,7 @@ the techniques are below. The second one is why I can still list a shopping trip
 three weeks ago.
 </p>
 
-<section class="mem-section" id="speed-game" hidden>
+<section class="mem-section" id="speed-game">
   <h2>Speed memory</h2>
   <p class="mem-sub">Ten items. Seven seconds. Then write them down.</p>
 
@@ -40,14 +40,14 @@ three weeks ago.
   <p class="tom-screen-reader" aria-live="polite" data-speed-live></p>
 </section>
 
-<div data-speed-noscript>
+<noscript>
   <p class="tom-note">
     <strong>The speed drill needs JavaScript.</strong> It runs entirely in your browser,
     with nothing sent anywhere, so with scripting off there is nothing to run.
   </p>
-</div>
+</noscript>
 
-<section class="mem-section" id="palace" hidden>
+<section class="mem-section" id="palace">
   <h2>The memory palace</h2>
   <p class="mem-sub">
     Five things to remember, parked in five rooms of a flat that does not exist. The
@@ -220,7 +220,7 @@ three weeks ago.
     <button type="button" class="tom-btn tom-btn-solid" data-palace-walk>Walk it for me</button>
   </div>
 
-  <div class="palace-quiz" data-palace-quiz hidden>
+  <div class="palace-quiz" data-palace-quiz>
     <h3>Now put it back</h3>
     <p class="tom-small tom-muted">
       Do not scroll up. Walk the flat in your head, room by room, and write down what
@@ -234,13 +234,13 @@ three weeks ago.
   </div>
 </section>
 
-<div data-palace-noscript>
+<noscript>
   <p class="tom-note">
     <strong>The palace walk needs JavaScript too.</strong> The list it stores is
     umbrella, batteries, milk, passport, taxes, in that order: hallway, kitchen, living
     room, bedroom, bathroom.
   </p>
-</div>
+</noscript>
 
 <h2>Why the silly pictures work</h2>
 

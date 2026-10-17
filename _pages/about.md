@@ -4,14 +4,6 @@ title: about
 permalink: /
 subtitle: ML safety and reliability, and the engineering to go with it.
 
-profile:
-  align: right
-  image: prof_pic.png # original illustrated monogram. TODO: Tom swaps in a real headshot.
-  image_circular: false
-  more_info: >
-    <p>Ann Arbor, Michigan</p>
-    <p>xiaoyc@umich.edu</p>
-
 selected_papers: true
 social: true
 
@@ -23,6 +15,20 @@ latest_posts:
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/tom.css' | relative_url }}">
+
+<div class="tom-portrait">
+  <img
+    src="{{ '/assets/img/avatar.svg' | relative_url }}"
+    width="800"
+    height="800"
+    fetchpriority="high"
+    alt="An original illustrated monogram: a globe grid crossed by a dotted four-stop route, with the letters X and C below it."
+  >
+  <p class="tom-portrait-meta">
+    Ann Arbor, Michigan<br>
+    <a href="mailto:xiaoyc@umich.edu">xiaoyc@umich.edu</a>
+  </p>
+</div>
 
 <p class="tom-lede">
 I work on why machine learning systems fail, and I build the systems that let me

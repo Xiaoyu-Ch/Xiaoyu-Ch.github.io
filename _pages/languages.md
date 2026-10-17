@@ -14,7 +14,7 @@ I work in seven languages at wildly uneven levels. Here is a word. Which one is 
 from? Some of them are in more than one, and any correct language scores.
 </p>
 
-<div class="guess" id="guess-game" hidden>
+<div class="guess" id="guess-game">
   <div class="guess-hud">
     <div class="guess-hud-item">
       <span class="tom-stat-label">Round</span>
@@ -31,7 +31,15 @@ from? Some of them are in more than one, and any correct language scores.
     <p class="guess-word" data-game-word aria-live="polite"></p>
 
     <p class="guess-prompt" id="guess-prompt">Which language is this?</p>
-    <div class="guess-choices" data-game-choices role="group" aria-labelledby="guess-prompt"></div>
+    <div class="guess-choices" data-game-choices role="group" aria-labelledby="guess-prompt">
+      <button type="button" class="guess-choice" data-lang="zh"><span class="guess-choice-key" aria-hidden="true">1</span>Mandarin</button>
+      <button type="button" class="guess-choice" data-lang="en"><span class="guess-choice-key" aria-hidden="true">2</span>English</button>
+      <button type="button" class="guess-choice" data-lang="es"><span class="guess-choice-key" aria-hidden="true">3</span>Spanish</button>
+      <button type="button" class="guess-choice" data-lang="fr"><span class="guess-choice-key" aria-hidden="true">4</span>French</button>
+      <button type="button" class="guess-choice" data-lang="de"><span class="guess-choice-key" aria-hidden="true">5</span>German</button>
+      <button type="button" class="guess-choice" data-lang="ja"><span class="guess-choice-key" aria-hidden="true">6</span>Japanese</button>
+      <button type="button" class="guess-choice" data-lang="pt"><span class="guess-choice-key" aria-hidden="true">7</span>Portuguese</button>
+    </div>
 
     <div class="guess-reveal" data-game-reveal aria-live="polite" hidden></div>
 
@@ -52,7 +60,7 @@ from? Some of them are in more than one, and any correct language scores.
   </div>
 </div>
 
-<div data-game-noscript>
+<noscript>
   <p class="tom-note">
     <strong>This one needs JavaScript.</strong> The game runs entirely in your browser,
     with no network calls, so with scripting off there is nothing to play. The words it
@@ -66,7 +74,7 @@ from? Some of them are in more than one, and any correct language scores.
     <li><strong>pie</strong> is a pie in English, a foot in Spanish and a magpie in French.</li>
     <li><strong>手紙</strong> is a letter in Japanese and toilet paper in Chinese.</li>
   </ul>
-</div>
+</noscript>
 
 <h2>How it is put together</h2>
 

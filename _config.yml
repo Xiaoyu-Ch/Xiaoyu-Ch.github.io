@@ -16,7 +16,7 @@ footer_text: >
 keywords: computer science, machine learning, ML safety, agent safety, systems reliability, research, software engineer # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧭 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+apple_touch_icon: prof_pic.png # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://xiaoyu-ch.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root (user/org GitHub Pages sites serve from the root)
@@ -477,7 +477,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
-enable_masonry: true # enables automatic project cards arrangement
+enable_masonry: false # off: the project cards are a CSS grid now, so the masonry script was a third-party request doing nothing
 enable_math: false # enables math typesetting (uses MathJax) - off: this site has no math content, and it was intercepting literal dollar amounts like "$0.30/min" as inline math delimiters
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
@@ -514,7 +514,11 @@ third_party_libraries:
     integrity:
       css: "sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw="
     url:
-      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+      # Blank on purpose: no academicon appears anywhere in the built site, and
+      # al_icons skips a library with no url.css, saving a render-blocking
+      # stylesheet. Restore the URL below if you start using ai-* classes.
+      # css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+      css: ""
     version: "1.9.5"
   chartjs:
     integrity:
@@ -548,7 +552,8 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      # Self-hosted. See assets/css/fonts.css for why, and for how to switch back.
+      fonts: "/assets/css/fonts.css"
   highlightjs:
     integrity:
       css:
@@ -651,7 +656,10 @@ third_party_libraries:
     integrity:
       css: "sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY="
     url:
-      css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+      # Blank on purpose, same reason as academicons above. The publication
+      # badges that used these are off, so nothing references si-* classes.
+      # css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+      css: ""
     version: "1.0.3"
   vanilla-back-to-top:
     integrity:

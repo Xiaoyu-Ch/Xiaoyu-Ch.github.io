@@ -625,3 +625,86 @@ button:focus-visible,
     animation: none;
   }
 }
+
+/* ------------------------------------------- link and target affordances */
+
+/*
+ * Links inside running text are underlined, not colour-only. Buttons, cards and
+ * chips opt out, since those already read as controls.
+ */
+.post article p > a,
+.post article li > a,
+.post article dd > a,
+footer a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.post article p > a.tom-btn,
+.post article li > a.tom-btn,
+.tom-card-body h3 > a,
+.tom-chip > a {
+  text-decoration: none;
+}
+
+.tom-card-body h3 > a:hover,
+.tom-chip > a:hover {
+  text-decoration: underline;
+}
+
+/* tocbot's sidebar links were 22px tall, below the 24px touch-target floor.
+   min-height rather than padding, because tocbot's own padding rule wins. */
+.toc-sidebar .toc-link {
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+  line-height: 1.35;
+}
+
+/* The profile image is square; declaring that stops it shifting the column
+   while the responsive source resolves. */
+.profile img {
+  aspect-ratio: 1 / 1;
+}
+
+/* ------------------------------------------------------------- portrait */
+
+/*
+ * The home-page portrait. Rendered by the page rather than by the about
+ * layout's `profile:` block, so that it comes after this stylesheet in the
+ * document and can carry real width and height attributes. An SVG at 3 KB
+ * instead of a 23 KB raster, and no layout shift while it loads.
+ */
+.tom-portrait {
+  float: right;
+  width: 270px;
+  max-width: 42%;
+  margin: 0 0 1.2rem 1.6rem;
+}
+
+.tom-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  box-shadow: var(--tom-panel-shadow);
+}
+
+.tom-portrait-meta {
+  margin: 0.7rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--tom-muted);
+  word-break: break-word;
+}
+
+@media (max-width: 575px) {
+  .tom-portrait {
+    float: none;
+    width: 180px;
+    max-width: 55%;
+    margin: 0 0 1.2rem;
+  }
+}

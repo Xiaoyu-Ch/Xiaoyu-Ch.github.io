@@ -62,10 +62,6 @@
     var live = root.querySelector("[data-speed-live]");
     if (!stage || !startBtn) return;
 
-    root.hidden = false;
-    var noscript = document.querySelector("[data-speed-noscript]");
-    if (noscript) noscript.hidden = true;
-
     var items = [];
     var ticker = null;
     var recallStarted = 0;
@@ -314,10 +310,6 @@
     var quizResult = root.querySelector("[data-palace-result]");
     if (!caption || !nextBtn) return;
 
-    var noscript = document.querySelector("[data-palace-noscript]");
-    if (noscript) noscript.hidden = true;
-    root.hidden = false;
-
     var at = 0;
     var autoTimer = null;
     var visited = {};
@@ -351,7 +343,8 @@
         stop.image +
         "</p>";
 
-      Array.prototype.forEach.call(stepsWrap.children, function (btn, i) {
+      Array.prototype.forEach.call(stepsWrap.children, function (li, i) {
+        var btn = li.querySelector("button") || li;
         btn.classList.toggle("is-current", i === at);
         btn.setAttribute("aria-current", i === at ? "true" : "false");
       });
@@ -374,6 +367,8 @@
     }
 
     STOPS.forEach(function (stop, i) {
+      // A <ul> may only contain <li>, so each step button gets its own item.
+      var li = document.createElement("li");
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "palace-step";
@@ -382,7 +377,8 @@
         stopAuto();
         go(i);
       });
-      stepsWrap.appendChild(btn);
+      li.appendChild(btn);
+      stepsWrap.appendChild(li);
     });
 
     prevBtn.addEventListener("click", function () {
@@ -461,6 +457,5 @@
     });
 
     go(0);
-    if (quiz) quiz.hidden = false;
   })();
 })();

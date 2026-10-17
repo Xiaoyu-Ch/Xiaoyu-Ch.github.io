@@ -74,33 +74,33 @@ what happened there.
     <path class="journey-route journey-route-draw" id="journey-ocean" d="M199.5 218.1 C 329.5 98.1, 525.6 28.1, 811.6 93.4 S 885.6 183.4, 851.6 243.4" />
     <path class="journey-route journey-route-draw" id="journey-land" d="M851.6 243.4 Q 865.6 281.9, 819.6 320.5 Q 767.6 242.7, 805.6 165.0" />
     <text class="journey-ocean-label" x="526" y="40" text-anchor="middle">one ocean, in between</text>
-    <g class="journey-pin" data-city="shanghai" role="button" tabindex="0" aria-expanded="false" aria-controls="city-shanghai" aria-label="Stop 1, Shanghai" transform="translate(199.5 218.1)">
+    <g class="journey-pin" data-city="shanghai" role="button" tabindex="0" aria-expanded="false" aria-controls="city-shanghai" aria-label="Shanghai" transform="translate(199.5 218.1)">
       <circle class="journey-pin-hit" r="24" />
       <circle class="journey-pin-halo" r="19" />
       <circle class="journey-pin-dot" r="7" />
       <text class="journey-pin-label" x="16" y="5" text-anchor="start">Shanghai</text>
-      <text class="journey-pin-order" x="0" y="-16" text-anchor="middle">1</text>
+      <text class="journey-pin-order" aria-hidden="true" x="0" y="-16" text-anchor="middle">1</text>
     </g>
-    <g class="journey-pin" data-city="chapel-hill" role="button" tabindex="0" aria-expanded="false" aria-controls="city-chapel-hill" aria-label="Stop 2, Chapel Hill" transform="translate(851.6 243.4)">
+    <g class="journey-pin" data-city="chapel-hill" role="button" tabindex="0" aria-expanded="false" aria-controls="city-chapel-hill" aria-label="Chapel Hill" transform="translate(851.6 243.4)">
       <circle class="journey-pin-hit" r="24" />
       <circle class="journey-pin-halo" r="19" />
       <circle class="journey-pin-dot" r="7" />
       <text class="journey-pin-label" x="16" y="5" text-anchor="start">Chapel Hill</text>
-      <text class="journey-pin-order" x="0" y="-16" text-anchor="middle">2</text>
+      <text class="journey-pin-order" aria-hidden="true" x="0" y="-16" text-anchor="middle">2</text>
     </g>
-    <g class="journey-pin" data-city="gainesville" role="button" tabindex="0" aria-expanded="false" aria-controls="city-gainesville" aria-label="Stop 3, Gainesville" transform="translate(819.6 320.5)">
+    <g class="journey-pin" data-city="gainesville" role="button" tabindex="0" aria-expanded="false" aria-controls="city-gainesville" aria-label="Gainesville" transform="translate(819.6 320.5)">
       <circle class="journey-pin-hit" r="24" />
       <circle class="journey-pin-halo" r="19" />
       <circle class="journey-pin-dot" r="7" />
       <text class="journey-pin-label" x="-16" y="5" text-anchor="end">Gainesville</text>
-      <text class="journey-pin-order" x="0" y="-16" text-anchor="middle">3</text>
+      <text class="journey-pin-order" aria-hidden="true" x="0" y="-16" text-anchor="middle">3</text>
     </g>
-    <g class="journey-pin" data-city="ann-arbor" role="button" tabindex="0" aria-expanded="false" aria-controls="city-ann-arbor" aria-label="Stop 4, Ann Arbor" transform="translate(805.6 165.0)">
+    <g class="journey-pin" data-city="ann-arbor" role="button" tabindex="0" aria-expanded="false" aria-controls="city-ann-arbor" aria-label="Ann Arbor" transform="translate(805.6 165.0)">
       <circle class="journey-pin-hit" r="24" />
       <circle class="journey-pin-halo" r="19" />
       <circle class="journey-pin-dot" r="7" />
       <text class="journey-pin-label" x="-16" y="5" text-anchor="end">Ann Arbor</text>
-      <text class="journey-pin-order" x="0" y="-16" text-anchor="middle">4</text>
+      <text class="journey-pin-order" aria-hidden="true" x="0" y="-16" text-anchor="middle">4</text>
     </g>
   </svg>
   </div>
