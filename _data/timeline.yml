@@ -1,0 +1,72 @@
+# Hand-maintained news timeline.
+#
+# Rendered by _pages/about.md and _pages/news.md rather than by the theme's
+# news.liquid, because that include prints `%b %d, %Y` and would invent a
+# day-of-month for entries where only the month is known. Every `when` string
+# below is written at the precision the source actually gives.
+#
+# Sources: shared/profile.yaml (education, experience_summary, publications).
+# Do not add an entry whose date is not in one of Tom's own files.
+# Order in this file is the display order: newest first. There is no sort key,
+# because the entries have mixed precision and a sort key would have to invent one.
+
+- when: "August 2026"
+  tag: move
+  text: >
+    Started at the <strong>University of Michigan</strong> in Ann Arbor as a
+    transfer student in Computer Science, expected May 2028.
+
+- when: "July 2026"
+  tag: research
+  text: >
+    Joined <strong>OrderLab</strong> (UMich EECS, Prof. Ryan Huang) as an
+    undergraduate researcher on AdaptGuard, an evaluation of sandbox policies
+    for coding agents.
+
+- when: "May 2026"
+  tag: research
+  text: >
+    Joined the <strong>TEA Lab</strong> at UF ECE as a research assistant on a
+    Citi-sponsored LLM agent safety benchmark, owning the data pipeline.
+
+- when: "May 2026"
+  tag: school
+  text: >
+    Finished coursework at the <strong>University of Florida</strong> before
+    transferring.
+
+- when: "February 2026"
+  tag: research
+  text: >
+    Joined the <strong>Computer Vision and Sensing Lab</strong> at UF ABE,
+    building the perception pipeline for an autonomous bamboo-harvesting robot.
+
+- when: "2026"
+  tag: paper
+  text: >
+    <em>A Doctor Dialogue Model Based on Vector Quantisation</em> accepted at
+    <strong>AICCONF 2026 (IEEE SMC)</strong> in Prague, as an oral presentation.
+
+- when: "September 2025"
+  tag: research
+  text: >
+    Began independent research at Zhongbo Zhichuang Technologies on a VQ-VAE
+    medical dialogue model.
+
+- when: "2025"
+  tag: paper
+  text: >
+    <em>CRetor: A Mandarin Counter-Speech Dataset Annotated for Rhetorical
+    Strategy</em> submitted to <strong>ACL Rolling Review</strong>.
+
+- when: "August 2024"
+  tag: school
+  text: >
+    Started the B.S. in Computer Science at the
+    <strong>University of Florida</strong>.
+
+- when: "2024"
+  tag: paper
+  text: >
+    <em>From Theory to Reality: The Quest for Gravitational Waves</em>
+    published at <strong>CONF-CIAP 2024</strong>, indexed in Scopus and CPCI.

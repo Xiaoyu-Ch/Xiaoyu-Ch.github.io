@@ -1,0 +1,13 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs';
+const [,, f, w, h] = process.argv;
+const svg = fs.readFileSync(f, 'utf8');
+const W = Number(w||600), H = Number(h||280);
+const html = `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:#fff}svg{display:block;width:${W}px;height:${H}px}</style>${svg}`;
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: W, height: H } });
+await page.setContent(html, { waitUntil: 'load' });
+const out = 'C:/Users/XIAOYU~1/AppData/Local/Temp/claude/D--Xiaoyu-s-Life-Projects/ac7b68d4-fe46-4491-9870-f0f61840a29b/scratchpad/' + f.split('/').pop().replace('.svg','.png');
+await page.locator('svg').screenshot({ path: out });
+await browser.close();
+console.log(out);

@@ -1,0 +1,14 @@
+import { chromium } from '@playwright/test';
+const [,, url, out, w, h, theme] = process.argv;
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: Number(w), height: Number(h) } });
+const errs = [];
+page.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
+page.on('pageerror', e => errs.push('PAGEERROR ' + e.message));
+if (theme === 'dark') await page.addInitScript(() => localStorage.setItem('theme', 'dark'));
+await page.goto(url, { waitUntil: 'networkidle' });
+await page.waitForTimeout(900);
+await page.screenshot({ path: out, fullPage: true });
+await browser.close();
+if (errs.length) console.log('CONSOLE ERRORS:\n' + errs.join('\n')); else console.log('no console errors');
+console.log(out);
