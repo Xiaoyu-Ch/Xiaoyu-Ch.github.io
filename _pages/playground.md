@@ -23,10 +23,12 @@ a cartoon flat where a salmon does its own tax return. No accounts, no network c
 no tracking: all three run entirely in your browser.
 </p>
 
+<h2>Three things to try</h2>
+
 <div class="tom-cards">
   {% for item in site.data.playground %}
     <article class="tom-card">
-      <img class="tom-card-art" src="{{ item.art | relative_url }}" width="600" height="280" loading="lazy" alt="{{ item.alt }}">
+      <img class="tom-card-art" src="{{ item.art | relative_url }}" width="600" height="280" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} alt="{{ item.alt }}">
       <div class="tom-card-body">
         <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
         <p>{{ item.blurb }}</p>

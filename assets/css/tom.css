@@ -708,3 +708,11 @@ footer a {
     margin: 0 0 1.2rem;
   }
 }
+
+/* --------------------------------------------------------- bibliography */
+
+/* The theme's year headings on the publications page use a grey that falls
+   under 4.5:1 on both backgrounds. */
+.publications h2.bibliography {
+  color: var(--tom-muted);
+}
