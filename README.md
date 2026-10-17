@@ -45,14 +45,14 @@ bundle exec jekyll serve
 
 ## Editing it
 
-| What | Where |
-| --- | --- |
-| CV content | `_data/cv.yml` |
-| Publications | `_bibliography/papers.bib` |
-| Project pages | `_projects/` |
-| Blog posts | `_posts/` (create the folder with the first post) |
-| Short news items | `_news/` |
-| Site-wide config | `_config.yml` |
+| What             | Where                                             |
+| ---------------- | ------------------------------------------------- |
+| CV content       | `_data/cv.yml`                                    |
+| Publications     | `_bibliography/papers.bib`                        |
+| Project pages    | `_projects/`                                      |
+| Blog posts       | `_posts/` (create the folder with the first post) |
+| Short news items | `_news/`                                          |
+| Site-wide config | `_config.yml`                                     |
 
 ## Built with
 
