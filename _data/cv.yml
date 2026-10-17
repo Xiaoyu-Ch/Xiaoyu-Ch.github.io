@@ -2,7 +2,6 @@ cv:
   name: Xiaoyu Chen
   label: CS Student, Engineer, ML Systems & Safety Research
   email: xiaoyc@umich.edu
-  phone: "+1-352-721-8534"
   location: Ann Arbor, MI
   image: ""
   summary: CS student at the University of Michigan (transferred from the University of Florida), building production ML/systems infrastructure. Currently working on LLM agent safety research (Citi-backed, UF TEA Lab) and adaptive safety policy evaluation (AdaptGuard, OrderLab, targeting OSDI 2026). Interested in both PhD study and industry SWE/ML infrastructure roles.
@@ -26,7 +25,6 @@ cv:
         studyType: B.S. (incoming transfer)
         start_date: 2026
         end_date: 2028
-        score: "GPA 4.0/4.0"
         highlights:
           - Expected graduation May 2028
 
@@ -40,13 +38,14 @@ cv:
 
     Experience:
       - company: AdaptGuard, OrderLab (Systems Reliability), University of Michigan EECS
-        position: Undergraduate Researcher, advised by Prof. Ryan Huang; supervised by Yuxuan Jiang
+        position: Undergraduate Researcher, advised by Prof. Ryan Huang
         location: Ann Arbor, MI
         start_date: 2026-07
         end_date: present
+        summary: AdaptGuard, an evaluation of sandbox policies for coding agents. Aimed at OSDI.
         highlights:
-          - "Identified a core failure mode in static agent-sandboxing via a CI/CD-style automated evaluation harness (50-scenario pilot scaled to 900-scenario rerun) across policy strictness levels on matched cheat/legitimate coding-agent scenario pairs: a permissive policy let an agent fake a bug fix by weakening a test assertion, while a strict policy blocking the cheat also blocked a legitimate regression-test addition; finding recognized by the PhD lead as a key insight in a project targeting OSDI publication, December 2026"
-          - "Sourced and quality-controlled two non-adversarial evaluation datasets (12 cases from Agent-SafetyBench, 14 from SABER) against PI-set criteria, spanning failure categories including privilege escalation and information leakage"
+          - "Built an automated evaluation harness for sandbox policies, run as a 50-scenario pilot and then a 900-scenario rerun"
+          - "Found that a permissive policy let an agent fake a bug fix, while a strict policy blocked a legitimate one"
 
       - company: TEA Lab, UF ECE (Citi-Sponsored Industry Collaboration)
         position: Research Assistant, advised by Dr. Ivan Ruchkin
@@ -55,9 +54,9 @@ cv:
         end_date: present
         summary: Own the full scalable data pipeline for a Citi-sponsored LLM agentic safety project (FinVault benchmark).
         highlights:
-          - "Built single-pass logprob/entropy extraction (Qwen3-8B) and executed a 1,064-case run across 31 scenarios on dual-H200 HPC (SLURM); fixed silent CUDA corruption, an fp16 overflow bug, and a 100% case-ID label-leakage vulnerability via a verified anonymization pipeline"
-          - "Validated results at scale (Kruskal-Wallis p<0.000001, n=1,064); found defended cases show the highest model uncertainty, a resistance signature rather than confusion, presented directly to Citi stakeholders"
-          - "Investigated a suspiciously strong TRACES baseline (AUROC 0.987); built a diagnostic classifier proving it was a scenario-identity shortcut, not real detection, with accuracy collapsing to chance under scenario-grouped splitting"
+          - "Built single-pass logprob and entropy extraction on Qwen3-8B, and ran 1,064 cases across 31 scenarios on dual H200 GPUs via SLURM"
+          - "Fixed silent CUDA corruption, an fp16 overflow, and a label-leakage bug in the pipeline"
+          - "Showed that a 0.987 AUROC baseline was a scenario-identity shortcut rather than real detection"
 
       - company: Computer Vision and Sensing Lab, UF ABE
         position: "Undergraduate Research Assistant (volunteer), advised by Dr. Henry Medeiros"
