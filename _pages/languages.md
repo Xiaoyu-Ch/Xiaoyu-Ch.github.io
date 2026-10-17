@@ -38,6 +38,7 @@ from? Some of them are in more than one, and any correct language scores.
     <div class="tom-btn-row">
       <button type="button" class="tom-btn tom-btn-solid" data-game-next hidden>Next word</button>
     </div>
+
   </div>
 
   <div class="guess-end" data-game-end hidden>

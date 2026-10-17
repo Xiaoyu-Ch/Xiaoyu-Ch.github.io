@@ -207,6 +207,7 @@ three weeks ago.
           <circle class="palace-walker-dot" r="6.5" />
         </g>
       </svg>
+
   </div>
 
   <div class="palace-caption" data-palace-caption aria-live="polite"></div>

@@ -27,17 +27,17 @@ site. That matters, because the starter carries its own `AGENTS.md` contract:
 
 ### Pages as found
 
-| Path                     | State                                                                     |
-| ------------------------ | ------------------------------------------------------------------------- |
+| Path                     | State                                                                         |
+| ------------------------ | ----------------------------------------------------------------------------- |
 | `_pages/about.md`        | Real bio text, but an **Einstein placeholder photo** and a CSS cube bolted on |
-| `_pages/cv.md`           | Real, but points at `assets/pdf/resume.pdf` (has phone number)            |
-| `_pages/publications.md` | Real, wired to `_bibliography/papers.bib` (3 real entries, no demo bib)   |
-| `_pages/projects.md`     | Real, 3 real projects, **no images at all**                               |
-| `_pages/personal.md`     | Real, photos of family and friends                                        |
-| `_pages/contact.md`      | Real, but **publishes Tom's phone number**                                |
-| `_pages/blog.md`         | Enabled, zero posts                                                       |
-| `_pages/news.md`         | Enabled, zero news items                                                  |
-| `_pages/404.md`          | Stock                                                                     |
+| `_pages/cv.md`           | Real, but points at `assets/pdf/resume.pdf` (has phone number)                |
+| `_pages/publications.md` | Real, wired to `_bibliography/papers.bib` (3 real entries, no demo bib)       |
+| `_pages/projects.md`     | Real, 3 real projects, **no images at all**                                   |
+| `_pages/personal.md`     | Real, photos of family and friends                                            |
+| `_pages/contact.md`      | Real, but **publishes Tom's phone number**                                    |
+| `_pages/blog.md`         | Enabled, zero posts                                                           |
+| `_pages/news.md`         | Enabled, zero news items                                                      |
+| `_pages/404.md`          | Stock                                                                         |
 
 A previous session already stripped al-folio's demo blog posts, demo bibliography
 and demo news. So "remove sample news and dummy publications" is **already done**;

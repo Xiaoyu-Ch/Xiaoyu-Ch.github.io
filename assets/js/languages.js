@@ -248,8 +248,7 @@
       btn.type = "button";
       btn.className = "guess-choice";
       btn.setAttribute("data-lang", lang.code);
-      btn.innerHTML =
-        '<span class="guess-choice-key" aria-hidden="true">' + (i + 1) + "</span>" + lang.name;
+      btn.innerHTML = '<span class="guess-choice-key" aria-hidden="true">' + (i + 1) + "</span>" + lang.name;
       btn.addEventListener("click", function () {
         answer(lang.code);
       });
@@ -314,9 +313,7 @@
     );
     parts.push('<dl class="guess-meanings">');
     entry.answers.forEach(function (c) {
-      parts.push(
-        "<dt>" + escapeHtml(NAME[c]) + "</dt><dd>" + escapeHtml(entry.meanings[c]) + "</dd>"
-      );
+      parts.push("<dt>" + escapeHtml(NAME[c]) + "</dt><dd>" + escapeHtml(entry.meanings[c]) + "</dd>");
     });
     parts.push("</dl>");
     parts.push('<p class="guess-note">' + escapeHtml(entry.note) + "</p>");
@@ -332,11 +329,7 @@
   }
 
   function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
   function finish() {
@@ -357,12 +350,7 @@
       var li = document.createElement("li");
       li.className = h.correct ? "is-right" : "is-wrong";
       li.innerHTML =
-        '<span class="guess-end-word">' +
-        escapeHtml(h.word) +
-        "</span> " +
-        '<span class="guess-end-detail">' +
-        listNames(h.answers) +
-        "</span>";
+        '<span class="guess-end-word">' + escapeHtml(h.word) + "</span> " + '<span class="guess-end-detail">' + listNames(h.answers) + "</span>";
       elEndList.appendChild(li);
     });
 

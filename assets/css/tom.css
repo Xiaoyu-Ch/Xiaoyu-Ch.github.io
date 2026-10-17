@@ -552,3 +552,76 @@ button:focus-visible,
   flex: 0 0 auto;
   margin-bottom: 0;
 }
+
+/* ------------------------------------------------------------ easter egg */
+
+.about-egg-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 8vh;
+  transform: translateX(-50%);
+  background: var(--tom-panel-bg);
+  color: var(--global-text-color);
+  border: 1px solid var(--tom-accent);
+  border-radius: 10px;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.9rem;
+  z-index: 9999;
+  box-shadow: var(--tom-panel-shadow);
+  animation: about-egg-toast-fade 3.5s ease-in-out forwards;
+}
+
+@keyframes about-egg-toast-fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-egg-ball {
+  position: fixed;
+  left: 0;
+  bottom: 15vh;
+  font-size: 2.5rem;
+  z-index: 9999;
+  pointer-events: none;
+  animation: about-egg-bounce 2.2s ease-in-out forwards;
+}
+
+@keyframes about-egg-bounce {
+  0% {
+    transform: translateX(-10vw) translateY(0);
+  }
+  15% {
+    transform: translateX(15vw) translateY(-38vh);
+  }
+  30% {
+    transform: translateX(35vw) translateY(0);
+  }
+  45% {
+    transform: translateX(55vw) translateY(-22vh);
+  }
+  60% {
+    transform: translateX(75vw) translateY(0);
+  }
+  75% {
+    transform: translateX(95vw) translateY(-10vh);
+  }
+  100% {
+    transform: translateX(115vw) translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-egg-toast {
+    animation: none;
+  }
+}

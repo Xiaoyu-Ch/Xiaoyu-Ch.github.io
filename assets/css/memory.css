@@ -58,15 +58,33 @@
   animation: tom-fade-in 0.3s ease both;
 }
 
-.speed-item:nth-child(2) { animation-delay: 0.03s; }
-.speed-item:nth-child(3) { animation-delay: 0.06s; }
-.speed-item:nth-child(4) { animation-delay: 0.09s; }
-.speed-item:nth-child(5) { animation-delay: 0.12s; }
-.speed-item:nth-child(6) { animation-delay: 0.15s; }
-.speed-item:nth-child(7) { animation-delay: 0.18s; }
-.speed-item:nth-child(8) { animation-delay: 0.21s; }
-.speed-item:nth-child(9) { animation-delay: 0.24s; }
-.speed-item:nth-child(10) { animation-delay: 0.27s; }
+.speed-item:nth-child(2) {
+  animation-delay: 0.03s;
+}
+.speed-item:nth-child(3) {
+  animation-delay: 0.06s;
+}
+.speed-item:nth-child(4) {
+  animation-delay: 0.09s;
+}
+.speed-item:nth-child(5) {
+  animation-delay: 0.12s;
+}
+.speed-item:nth-child(6) {
+  animation-delay: 0.15s;
+}
+.speed-item:nth-child(7) {
+  animation-delay: 0.18s;
+}
+.speed-item:nth-child(8) {
+  animation-delay: 0.21s;
+}
+.speed-item:nth-child(9) {
+  animation-delay: 0.24s;
+}
+.speed-item:nth-child(10) {
+  animation-delay: 0.27s;
+}
 
 .speed-countdown {
   display: flex;
@@ -267,25 +285,63 @@
 
 /* --------------------------------------------------- illustration paint */
 
-.pt-fill-cream { fill: #f6f2e8; }
-.pt-fill-blue { fill: #8fb9ef; }
-.pt-fill-orange { fill: #f08c6c; }
-.pt-fill-orange-dark { fill: #e0785a; }
-.pt-fill-green { fill: #9fe0a8; }
-.pt-fill-amber { fill: #f2b55c; }
-.pt-fill-violet { fill: #c7b0f0; }
-.pt-fill-violet-dark { fill: #b49ae6; }
-.pt-fill-navy { fill: #28406b; }
-.pt-fill-wood { fill: #b98a5c; }
-.pt-headboard { fill: #8d6440; }
-.pt-pillow { fill: #ffffff; }
-.pt-gold { fill: #f2cf5c; }
-.pt-shades { fill: #1f2733; }
-.pt-cap { fill: #d6d2c4; }
-.pt-spot { fill: #2d2a33; }
-.pt-eye { fill: #2d2a33; }
-.pt-water { fill: #5f93d6; }
-.pt-bubble { fill: rgba(246, 242, 232, 0.6); }
+.pt-fill-cream {
+  fill: #f6f2e8;
+}
+.pt-fill-blue {
+  fill: #8fb9ef;
+}
+.pt-fill-orange {
+  fill: #f08c6c;
+}
+.pt-fill-orange-dark {
+  fill: #e0785a;
+}
+.pt-fill-green {
+  fill: #9fe0a8;
+}
+.pt-fill-amber {
+  fill: #f2b55c;
+}
+.pt-fill-violet {
+  fill: #c7b0f0;
+}
+.pt-fill-violet-dark {
+  fill: #b49ae6;
+}
+.pt-fill-navy {
+  fill: #28406b;
+}
+.pt-fill-wood {
+  fill: #b98a5c;
+}
+.pt-headboard {
+  fill: #8d6440;
+}
+.pt-pillow {
+  fill: #ffffff;
+}
+.pt-gold {
+  fill: #f2cf5c;
+}
+.pt-shades {
+  fill: #1f2733;
+}
+.pt-cap {
+  fill: #d6d2c4;
+}
+.pt-spot {
+  fill: #2d2a33;
+}
+.pt-eye {
+  fill: #2d2a33;
+}
+.pt-water {
+  fill: #5f93d6;
+}
+.pt-bubble {
+  fill: rgba(246, 242, 232, 0.6);
+}
 
 .pt-stroke,
 .pt-legs,
@@ -299,13 +355,34 @@
   stroke-linejoin: round;
 }
 
-.pt-stroke { stroke: #f6f2e8; stroke-width: 4; }
-.pt-legs { stroke: #f6f2e8; stroke-width: 4; }
-.pt-fin { stroke: #e0785a; stroke-width: 3; }
-.pt-wave { stroke: #6fd6c4; stroke-width: 4; }
-.pt-shades-bridge { stroke: #1f2733; stroke-width: 2; }
-.pt-form-lines path { stroke: #56627a; stroke-width: 2; }
-.pt-form-sign { stroke: #a9521c; stroke-width: 2.6; }
+.pt-stroke {
+  stroke: #f6f2e8;
+  stroke-width: 4;
+}
+.pt-legs {
+  stroke: #f6f2e8;
+  stroke-width: 4;
+}
+.pt-fin {
+  stroke: #e0785a;
+  stroke-width: 3;
+}
+.pt-wave {
+  stroke: #6fd6c4;
+  stroke-width: 4;
+}
+.pt-shades-bridge {
+  stroke: #1f2733;
+  stroke-width: 2;
+}
+.pt-form-lines path {
+  stroke: #56627a;
+  stroke-width: 2;
+}
+.pt-form-sign {
+  stroke: #a9521c;
+  stroke-width: 2.6;
+}
 
 .pt-tiny {
   fill: #2d4a33;

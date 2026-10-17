@@ -10,20 +10,20 @@ toc:
 ---
 
 {% comment %}
-  Rendered here rather than through `layout: cv`.
+Rendered here rather than through `layout: cv`.
 
-  The gem's cv layout calls {% raw %}{% al_folio_cv_render %}{% endraw %} and discards the page's own
-  content, which means no stylesheet link can be injected into it and the page
-  keeps al-folio's default palette while every other page uses this site's. The
-  data source is unchanged: this still reads _data/cv.yml, so there is still one
-  place to edit, and the rendercv workflow still sees the schema it expects.
+The gem's cv layout calls {% raw %}{% al_folio_cv_render %}{% endraw %} and discards the page's own
+content, which means no stylesheet link can be injected into it and the page
+keeps al-folio's default palette while every other page uses this site's. The
+data source is unchanged: this still reads \_data/cv.yml, so there is still one
+place to edit, and the rendercv workflow still sees the schema it expects.
 
-  Dates in _data/cv.yml are a mix of bare years (2026), year-months ("2026-07"),
-  real dates (2026-01-01) and the literal "present". `append: ""` turns each into
-  a string so its length can be tested. Length 4 is a bare year and prints as is.
-  Length 7 is a year-month, which Liquid's date filter cannot parse on its own, so
-  it gets a "-01" day appended first. "present" is checked before the length tests,
-  because it is also seven characters long.
+Dates in \_data/cv.yml are a mix of bare years (2026), year-months ("2026-07"),
+real dates (2026-01-01) and the literal "present". `append: ""` turns each into
+a string so its length can be tested. Length 4 is a bare year and prints as is.
+Length 7 is a year-month, which Liquid's date filter cannot parse on its own, so
+it gets a "-01" day appended first. "present" is checked before the length tests,
+because it is also seven characters long.
 {% endcomment %}
 
 <link rel="stylesheet" href="{{ '/assets/css/tom.css' | relative_url }}">
@@ -59,15 +59,16 @@ toc:
 <h2 id="education">Education</h2>
 
 {% for item in cv.sections.Education %}
-  {% assign sv = item.start_date | append: "" %}
-  {% assign ev = item.end_date | append: "" %}
-  {% if sv.size == 4 %}{% assign started = sv %}
-  {% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
-  {% if ev == "present" %}{% assign ended = "present" %}
-  {% elsif ev.size == 4 %}{% assign ended = ev %}
-  {% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+{% assign sv = item.start_date | append: "" %}
+{% assign ev = item.end_date | append: "" %}
+{% if sv.size == 4 %}{% assign started = sv %}
+{% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
+{% if ev == "present" %}{% assign ended = "present" %}
+{% elsif ev.size == 4 %}{% assign ended = ev %}
+{% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+
   <article class="cv-entry">
     <p class="cv-when">{{ started }} to {{ ended }}</p>
     <div class="cv-body">
@@ -88,15 +89,16 @@ toc:
 <h2 id="experience">Experience</h2>
 
 {% for item in cv.sections.Experience %}
-  {% assign sv = item.start_date | append: "" %}
-  {% assign ev = item.end_date | append: "" %}
-  {% if sv.size == 4 %}{% assign started = sv %}
-  {% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
-  {% if ev == "present" %}{% assign ended = "present" %}
-  {% elsif ev.size == 4 %}{% assign ended = ev %}
-  {% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+{% assign sv = item.start_date | append: "" %}
+{% assign ev = item.end_date | append: "" %}
+{% if sv.size == 4 %}{% assign started = sv %}
+{% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
+{% if ev == "present" %}{% assign ended = "present" %}
+{% elsif ev.size == 4 %}{% assign ended = ev %}
+{% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+
   <article class="cv-entry">
     <p class="cv-when">{{ started }} to {{ ended }}</p>
     <div class="cv-body">
@@ -115,6 +117,7 @@ toc:
 <h2 id="publications">Publications</h2>
 
 {% for item in cv.sections.Publications %}
+
   <article class="cv-entry">
     <p class="cv-when">{{ item.releaseDate | date: "%Y" }}</p>
     <div class="cv-body">
@@ -130,15 +133,16 @@ toc:
 <h2 id="projects">Projects</h2>
 
 {% for item in cv.sections.Projects %}
-  {% assign sv = item.start_date | append: "" %}
-  {% assign ev = item.end_date | append: "" %}
-  {% if sv.size == 4 %}{% assign started = sv %}
-  {% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
-  {% if ev == "present" %}{% assign ended = "present" %}
-  {% elsif ev.size == 4 %}{% assign ended = ev %}
-  {% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
-  {% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+{% assign sv = item.start_date | append: "" %}
+{% assign ev = item.end_date | append: "" %}
+{% if sv.size == 4 %}{% assign started = sv %}
+{% elsif sv.size == 7 %}{% assign started = sv | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign started = item.start_date | date: "%b %Y" %}{% endif %}
+{% if ev == "present" %}{% assign ended = "present" %}
+{% elsif ev.size == 4 %}{% assign ended = ev %}
+{% elsif ev.size == 7 %}{% assign ended = ev | append: "-01" | date: "%b %Y" %}
+{% else %}{% assign ended = item.end_date | date: "%b %Y" %}{% endif %}
+
   <article class="cv-entry">
     <p class="cv-when">{{ started }} to {{ ended }}</p>
     <div class="cv-body">

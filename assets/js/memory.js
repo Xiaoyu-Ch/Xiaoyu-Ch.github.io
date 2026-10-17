@@ -27,9 +27,30 @@
     if (!root) return;
 
     var WORDS = [
-      "anchor", "basil", "cactus", "domino", "ember", "fossil", "gondola", "harbour",
-      "iguana", "jigsaw", "kettle", "lantern", "marble", "nutmeg", "otter", "pebble",
-      "quartz", "ribbon", "saddle", "thimble", "umbrella", "velvet", "walnut", "zebra",
+      "anchor",
+      "basil",
+      "cactus",
+      "domino",
+      "ember",
+      "fossil",
+      "gondola",
+      "harbour",
+      "iguana",
+      "jigsaw",
+      "kettle",
+      "lantern",
+      "marble",
+      "nutmeg",
+      "otter",
+      "pebble",
+      "quartz",
+      "ribbon",
+      "saddle",
+      "thimble",
+      "umbrella",
+      "velvet",
+      "walnut",
+      "zebra",
     ];
 
     var COUNT = 10;
@@ -264,8 +285,7 @@
         x: 470,
         y: 382,
         image:
-          "Your passport is asleep on the pillow wearing tiny sunglasses. Every time " +
-          "it snores, a visa stamp puffs out and lands on the duvet.",
+          "Your passport is asleep on the pillow wearing tiny sunglasses. Every time " + "it snores, a visa stamp puffs out and lands on the duvet.",
       },
       {
         room: "bathroom",
@@ -382,13 +402,16 @@
         }
         go(0);
         walkBtn.textContent = "Stop the walk";
-        autoTimer = window.setInterval(function () {
-          if (at >= STOPS.length - 1) {
-            stopAuto();
-            return;
-          }
-          go(at + 1);
-        }, reduceMotion ? 2600 : 3400);
+        autoTimer = window.setInterval(
+          function () {
+            if (at >= STOPS.length - 1) {
+              stopAuto();
+              return;
+            }
+            go(at + 1);
+          },
+          reduceMotion ? 2600 : 3400
+        );
       });
     }
 
