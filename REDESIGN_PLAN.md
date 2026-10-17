@@ -6,6 +6,20 @@ and engineering profile. Build on the existing repo, do not start over.
 
 <!--ts-->
 
+- [Redesign plan, branch redesign-2026](#redesign-plan-branch-redesign-2026)
+  - [1. Inventory of the site as found](#1-inventory-of-the-site-as-found)
+    - [Repo shape](#repo-shape)
+    - [Pages as found](#pages-as-found)
+    - [Privacy problems found](#privacy-problems-found)
+    - [Research-disclosure problems found](#research-disclosure-problems-found)
+    - [Toolchain on this machine](#toolchain-on-this-machine)
+  - [2. Work plan](#2-work-plan)
+    - [Phase A, cleanup and foundation](#phase-a-cleanup-and-foundation)
+    - [Phase B, pages](#phase-b-pages)
+    - [Phase C, the three interactive features](#phase-c-the-three-interactive-features)
+    - [Phase D, build, test, polish](#phase-d-build-test-polish)
+  - [3. Things only Tom can finish](#3-things-only-tom-can-finish)
+
 <!--te-->
 
 ## 1. Inventory of the site as found
