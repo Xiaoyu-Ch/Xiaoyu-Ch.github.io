@@ -220,6 +220,17 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
+  - BLOCKERS.md
+  - DECISIONS.md
+  - MORNING_TODO.md
+  - NOTES_FOR_TOM.md
+  - REDESIGN_PLAN.md
+  - SUMMARY.md
+  - node_modules/
+  - tmp-play.mjs
+  - tmp-probe.mjs
+  - tmp-shot.mjs
+  - tmp-rasterize.mjs
   - al-folio-upgrade-report.md
   - bin/
   - CLAUDE.md
@@ -233,7 +244,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
