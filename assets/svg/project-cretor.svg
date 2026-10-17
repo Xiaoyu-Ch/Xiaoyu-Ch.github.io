@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280" role="img" aria-label="Two speech bubbles facing each other above a sliding scale from zero to ten.">
+  <defs>
+    <linearGradient id="crBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15202e" />
+      <stop offset="1" stop-color="#231c33" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="280" fill="url(#crBg)" />
+
+  <!-- two bubbles, facing off -->
+  <g>
+    <rect x="48" y="44" width="212" height="96" rx="22" fill="#e58f9c" />
+    <path d="M96 138 L90 170 L130 138 Z" fill="#e58f9c" />
+    <g stroke="#3a1a22" stroke-width="7" stroke-linecap="round">
+      <path d="M80 80 h120" />
+      <path d="M80 102 h148" />
+    </g>
+  </g>
+  <g>
+    <rect x="340" y="44" width="212" height="96" rx="22" fill="#6fd6c4" />
+    <path d="M504 138 L510 170 L470 138 Z" fill="#6fd6c4" />
+    <g stroke="#10302c" stroke-width="7" stroke-linecap="round">
+      <path d="M400 80 h120" />
+      <path d="M372 102 h148" />
+    </g>
+  </g>
+
+  <!-- the continuous scale the Elo model produces -->
+  <g transform="translate(0 214)">
+    <rect x="70" y="-7" width="460" height="14" rx="7" fill="#2f3b4e" />
+    <rect x="70" y="-7" width="304" height="14" rx="7" fill="#f2b55c" />
+    <circle cx="374" cy="0" r="15" fill="#f6f2e8" />
+    <circle cx="374" cy="0" r="6" fill="#f2b55c" />
+    <text x="70" y="34" fill="#8da4b0" font-family="Roboto, system-ui, sans-serif" font-size="13">0</text>
+    <text x="530" y="34" text-anchor="end" fill="#8da4b0" font-family="Roboto, system-ui, sans-serif" font-size="13">10</text>
+    <text x="300" y="-24" text-anchor="middle" fill="#f0ede4" font-family="Roboto, system-ui, sans-serif" font-size="13" letter-spacing="1">BINARY PREFERENCES, MADE CONTINUOUS</text>
+  </g>
+</svg>

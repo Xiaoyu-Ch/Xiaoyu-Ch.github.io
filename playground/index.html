@@ -1,0 +1,152 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> playground | Xiaoyu Tom Chen </title> <meta name="author" content="Xiaoyu Tom Chen"> <meta name="description" content="Three small things that run entirely in your browser."> <meta name="keywords" content="computer science, machine learning, ML safety, agent safety, systems reliability, research, software engineer"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="/assets/css/fonts.css"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AD&lt;/text&gt;&lt;/svg&gt;"> <link rel="apple-touch-icon" href="/assets/img/prof_pic.png?v=46a48bc7ff32549e9910e21d6550adcc"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiaoyu-ch.github.io/playground/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Xiaoyu</span> Tom Chen </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">playground <span class="sr-only">(current)</span> </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/map/">Where I have been</a> <a class="dropdown-item " href="/languages/">Guess the language</a> <a class="dropdown-item " href="/memory/">Memory corner</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">personal </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">playground</h1> <p class="post-description">Three small things that run entirely in your browser.</p> </header> <article> <link rel="stylesheet" href="/assets/css/tom.css"> <p class="tom-lede"> A map I drew by hand, a game about seven languages that are quietly lying to you, and a cartoon flat where a salmon does its own tax return. No accounts, no network calls, no tracking: all three run entirely in your browser. </p> <h2>Three things to try</h2> <div class="tom-cards"> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-map.svg" width="600" height="280" fetchpriority="high" alt="A stylised world map with a dotted route linking four marked stops."> <div class="tom-card-body"> <h3><a href="/map/">Where I have been</a></h3> <p>Four cities, one route, drawn as a map you can click through.</p> <ul class="tom-chips"> <li class="tom-chip">Original SVG</li> <li class="tom-chip">No map tiles</li> </ul> </div> </article> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-languages.svg" width="600" height="280" loading="lazy" alt="Seven speech bubbles, each holding a letter from a different writing system."> <div class="tom-card-body"> <h3><a href="/languages/">Guess the language</a></h3> <p>Ten rounds across my seven languages. There are traps. German <em>Gift</em> is one.</p> <ul class="tom-chips"> <li class="tom-chip">10 rounds</li> <li class="tom-chip tom-chip-warm">Harder than it looks</li> </ul> </div> </article> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-memory.svg" width="600" height="280" loading="lazy" alt="A cutaway cartoon apartment with four rooms, each holding one odd object."> <div class="tom-card-body"> <h3><a href="/memory/">Memory corner</a></h3> <p>A speed recall drill, and a cartoon apartment where a salmon does your taxes.</p> <ul class="tom-chips"> <li class="tom-chip">Timed</li> <li class="tom-chip">Memory palace</li> </ul> </div> </article> </div> <p class="tom-small tom-muted"> Each of these is a separate page with its own stylesheet and script, kept out of the CV and publications pages on purpose. Those two stay plain. </p> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Xiaoyu Tom Chen. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Illustrations and maps on this site are original. No analytics, no trackers. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-research",
+          title: "research",
+          description: "What I work on, at the level a CV would put it.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Things I have built end to end, from idea to shipped product.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "Full citations, newest first.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, research, publications and skills.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-where-i-have-been",
+              title: "Where I have been",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/map/";
+              },
+            },{id: "dropdown-guess-the-language",
+              title: "Guess the language",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/languages/";
+              },
+            },{id: "dropdown-memory-corner",
+              title: "Memory corner",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/memory/";
+              },
+            },{id: "nav-personal",
+          title: "personal",
+          description: "Life outside the lab and the codebase.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/personal/";
+          },
+        },{id: "nav-contact",
+          title: "contact",
+          description: "Email is the reliable one.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-muted",
+          title: 'Muted',
+          description: "AI-first English speaking practice app, solo-built end to end",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/muted/";
+            },},{id: "projects-hoopalytics",
+          title: 'Hoopalytics',
+          description: "Sorting-algorithm comparison engine over scraped NBA data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hoopalytics/";
+            },},{id: "projects-cretor-mandarin-counter-speech-dataset",
+          title: 'CRetor: Mandarin Counter-Speech Dataset',
+          description: "An Elo-based scoring model for LLM fine-tuning on counter-speech",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cretor/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%69%61%6F%79%63@%75%6D%69%63%68.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/Xiaoyu-Ch", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/xiaoyu-tom-chen-658251335", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

@@ -1,0 +1,258 @@
+/* map.css - the "Where I have been" page. */
+
+.journey {
+  margin: 1.5rem 0 0;
+}
+
+.journey-frame {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--tom-panel-border);
+  background: #0e1a2b;
+  box-shadow: var(--tom-panel-shadow);
+  -webkit-overflow-scrolling: touch;
+}
+
+.journey-svg {
+  display: block;
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+}
+
+/* ------------------------------------------------------------- map paint */
+
+.journey-panel rect {
+  fill: #13293c;
+  stroke: rgba(159, 208, 221, 0.22);
+  stroke-width: 1.5;
+}
+
+.journey-panel-label {
+  fill: #f0ede4;
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.journey-panel-sub {
+  fill: #8ba3b0;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.journey-grid line {
+  stroke: rgba(159, 208, 221, 0.12);
+  stroke-width: 1;
+}
+
+.journey-land path {
+  fill: #1f6159;
+  stroke: #49a99a;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.journey-ocean-label {
+  fill: #8ba3b0;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* ----------------------------------------------------------------- route */
+
+.journey-route {
+  fill: none;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.journey-route-base {
+  stroke: rgba(242, 181, 92, 0.18);
+}
+
+.journey-route-draw {
+  stroke: #f2b55c;
+  stroke-dasharray: 9 10;
+}
+
+/* The draw-on animation runs the dash pattern forward, then settles. */
+.journey-animating .journey-route-draw {
+  animation: journey-dash 2.4s linear;
+}
+
+#journey-land.journey-route-draw {
+  animation-delay: 1.1s;
+}
+
+@keyframes journey-dash {
+  from {
+    stroke-dashoffset: 420;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ pins */
+
+.journey-pin {
+  cursor: pointer;
+}
+
+.journey-pin-hit {
+  fill: transparent;
+}
+
+.journey-pin-halo {
+  fill: rgba(242, 181, 92, 0.16);
+  transition:
+    r 0.2s ease,
+    fill 0.2s ease;
+}
+
+.journey-pin-dot {
+  fill: #f2b55c;
+  stroke: #0e1a2b;
+  stroke-width: 2;
+  transition: r 0.2s ease;
+}
+
+.journey-pin-label {
+  fill: #f6f2e8;
+  font-size: 13px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: #0e1a2b;
+  stroke-width: 3.5;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.journey-pin-order {
+  fill: #6fd6c4;
+  font-size: 11px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: #0e1a2b;
+  stroke-width: 3;
+  pointer-events: none;
+}
+
+.journey-pin:hover .journey-pin-halo,
+.journey-pin:focus-visible .journey-pin-halo,
+.journey-pin.is-active .journey-pin-halo {
+  fill: rgba(242, 181, 92, 0.34);
+  r: 23;
+}
+
+.journey-pin.is-active .journey-pin-dot {
+  r: 9;
+}
+
+.journey-pin:focus {
+  outline: none;
+}
+
+.journey-pin:focus-visible .journey-pin-dot {
+  stroke: #6fd6c4;
+  stroke-width: 3;
+}
+
+/* -------------------------------------------------------------- controls */
+
+.journey-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin: 0.9rem 0 0;
+}
+
+.journey-hint {
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------- cards */
+
+.journey-cards {
+  list-style: none;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.journey-card {
+  background: var(--tom-panel-bg);
+  border: 1px solid var(--tom-panel-border);
+  border-left: 4px solid var(--tom-accent);
+  border-radius: 12px;
+  box-shadow: var(--tom-panel-shadow);
+  padding: 1.1rem 1.25rem 1.2rem;
+}
+
+.journey-card h2 {
+  margin: 0 0 0.3rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.journey-card-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--tom-accent);
+  color: var(--tom-panel-bg);
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.journey-card-when {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--tom-muted);
+  margin: 0 0 0.7rem;
+}
+
+.journey-card p {
+  margin: 0 0 0.7rem;
+}
+
+/* With JS on, the list becomes a one-at-a-time panel. */
+.journey-js .journey-card[hidden] {
+  display: none;
+}
+
+.journey-js .journey-card {
+  animation: tom-fade-in 0.3s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-animating .journey-route-draw {
+    animation: none;
+  }
+  .journey-js .journey-card {
+    animation: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .journey-card {
+    padding: 0.95rem 1rem 1rem;
+  }
+  .journey-card h2 {
+    font-size: 1.15rem;
+  }
+}

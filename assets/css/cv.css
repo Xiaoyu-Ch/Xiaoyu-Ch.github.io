@@ -1,0 +1,124 @@
+/* cv.css - the CV page, rendered from _data/cv.yml by _pages/cv.md. */
+
+.cv-contact {
+  margin-bottom: 1.4rem;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 0.3rem 1.4rem;
+  padding: 1rem 0 1.1rem;
+  border-top: 1px solid var(--tom-rule);
+}
+
+.cv-entry:first-of-type {
+  border-top: 0;
+  padding-top: 0.4rem;
+}
+
+.cv-when {
+  margin: 0;
+  padding-top: 0.25rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tom-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-body h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.cv-meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  color: var(--tom-muted);
+}
+
+.cv-summary {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.cv-body ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.cv-body li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cv-body li::marker {
+  color: var(--tom-accent);
+}
+
+/* ---------------------------------------------------------------- skills */
+
+.cv-skills {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cv-skill-group h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--tom-muted);
+  text-transform: uppercase;
+}
+
+.cv-skill-group .tom-chips {
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------- languages */
+
+.cv-langs {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.5rem;
+}
+
+.cv-langs li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 9px;
+  border: 1px solid var(--tom-panel-border);
+  background: var(--tom-accent-wash);
+}
+
+.cv-lang-name {
+  font-weight: 600;
+}
+
+.cv-lang-level {
+  font-size: 0.84rem;
+  color: var(--tom-muted);
+}
+
+@media (max-width: 575px) {
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .cv-when {
+    padding-top: 0;
+  }
+}

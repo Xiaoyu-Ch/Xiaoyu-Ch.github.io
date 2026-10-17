@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280" role="img" aria-label="A cutaway cartoon apartment with four rooms, each holding one odd object.">
+  <defs>
+    <linearGradient id="memBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1726" />
+      <stop offset="1" stop-color="#2d1c22" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="280" fill="url(#memBg)" />
+
+  <!-- apartment shell -->
+  <g stroke="#f6f2e8" stroke-opacity="0.5" stroke-width="3" fill="none">
+    <rect x="48" y="40" width="504" height="200" rx="8" />
+    <line x1="300" y1="40" x2="300" y2="240" />
+    <line x1="48" y1="140" x2="552" y2="140" />
+  </g>
+  <g fill="#f6f2e8" fill-opacity="0.045">
+    <rect x="51" y="43" width="246" height="94" />
+    <rect x="303" y="43" width="246" height="94" />
+    <rect x="51" y="143" width="246" height="94" />
+    <rect x="303" y="143" width="246" height="94" />
+  </g>
+
+  <!-- room 1, hallway: a boot sprouting a plant -->
+  <g transform="translate(118 108)">
+    <path d="M-22 4 q0 -26 8 -34 q10 -8 18 0 q6 8 6 20 l16 6 q10 4 10 12 l-58 0 q-4 -2 0 -4 z" fill="#8fb9ef" />
+    <path d="M-4 -30 q2 -22 16 -30 q-4 18 -16 30 z" fill="#9fe0a8" />
+    <path d="M-4 -30 q-14 -14 -28 -12 q10 12 28 12 z" fill="#6fd6c4" />
+  </g>
+
+  <!-- room 2, kitchen: a kettle wearing a crown -->
+  <g transform="translate(424 104)">
+    <path d="M-26 8 q0 -24 26 -24 q26 0 26 24 q0 12 -8 12 l-36 0 q-8 0 -8 -12 z" fill="#f2b55c" />
+    <path d="M26 -6 q16 2 14 14 q-2 10 -14 10" fill="none" stroke="#f2b55c" stroke-width="5" />
+    <path d="M-16 -20 l6 -14 l8 8 l8 -12 l8 12 l8 -8 l5 14 z" fill="#e58f9c" />
+  </g>
+
+  <!-- room 3, living room: a cow surfing the sofa -->
+  <g transform="translate(140 196)">
+    <rect x="-66" y="2" width="132" height="30" rx="8" fill="#c7b0f0" />
+    <rect x="-60" y="-12" width="30" height="18" rx="6" fill="#b49ae6" />
+    <rect x="-24" y="-12" width="30" height="18" rx="6" fill="#b49ae6" />
+    <rect x="12" y="-12" width="30" height="18" rx="6" fill="#b49ae6" />
+    <!-- wave -->
+    <path d="M-72 30 q22 -16 44 0 t44 0 t44 0" fill="none" stroke="#6fd6c4" stroke-width="4" />
+    <!-- cow -->
+    <g transform="translate(6 -34)">
+      <ellipse cx="0" cy="0" rx="28" ry="17" fill="#f6f2e8" />
+      <ellipse cx="-11" cy="-4" rx="8" ry="6" fill="#2d2a33" />
+      <ellipse cx="9" cy="6" rx="6" ry="5" fill="#2d2a33" />
+      <circle cx="28" cy="-7" r="12" fill="#f6f2e8" />
+      <circle cx="25" cy="-10" r="2.2" fill="#2d2a33" />
+      <path d="M20 -17 l-6 -8 l9 3 z" fill="#f6f2e8" />
+      <path d="M-26 10 l-5 12 M-10 14 l-3 12 M8 14 l3 12 M24 8 l6 12"
+            stroke="#f6f2e8" stroke-width="4" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- room 4, bathroom: a salmon filing tax returns in the bathtub -->
+  <g transform="translate(424 198)">
+    <path d="M-62 -4 q0 -8 8 -8 l108 0 q8 0 8 8 l-6 26 q-2 8 -10 8 l-82 0 q-8 0 -10 -8 z" fill="#8fb9ef" />
+    <circle cx="-54" cy="-18" r="4" fill="#f6f2e8" />
+    <path d="M-54 -22 q0 -12 10 -14" fill="none" stroke="#f6f2e8" stroke-width="3" />
+    <!-- salmon -->
+    <g transform="translate(6 4)">
+      <path d="M-26 0 q14 -16 32 0 q-14 16 -32 0 z" fill="#f08c6c" />
+      <path d="M-26 0 l-11 -9 l0 18 z" fill="#e0785a" />
+      <circle cx="0" cy="-2" r="1.9" fill="#2d2a33" />
+    </g>
+    <!-- tax form -->
+    <g transform="translate(34 -12) rotate(9)">
+      <rect x="-12" y="-16" width="24" height="31" rx="2" fill="#f6f2e8" />
+      <g stroke="#56627a" stroke-width="2" stroke-linecap="round">
+        <path d="M-7 -9 h14" />
+        <path d="M-7 -3 h14" />
+        <path d="M-7 3 h9" />
+      </g>
+      <path d="M-7 9 h8" stroke="#a9521c" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- the walking path through the rooms -->
+  <path d="M118 108 L424 104 L140 196 L424 198"
+        fill="none" stroke="#f2b55c" stroke-width="2.5" stroke-dasharray="7 9" stroke-opacity="0.55" />
+</svg>

@@ -1,0 +1,152 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> memory corner | Xiaoyu Tom Chen </title> <meta name="author" content="Xiaoyu Tom Chen"> <meta name="description" content="A speed recall drill, and a cartoon apartment where a salmon does your taxes."> <meta name="keywords" content="computer science, machine learning, ML safety, agent safety, systems reliability, research, software engineer"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="/assets/css/fonts.css"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AD&lt;/text&gt;&lt;/svg&gt;"> <link rel="apple-touch-icon" href="/assets/img/prof_pic.png?v=46a48bc7ff32549e9910e21d6550adcc"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiaoyu-ch.github.io/memory/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Xiaoyu</span> Tom Chen </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">playground </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/map/">Where I have been</a> <a class="dropdown-item " href="/languages/">Guess the language</a> <a class="dropdown-item " href="/memory/">Memory corner</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">personal </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">memory corner</h1> <p class="post-description">A speed recall drill, and a cartoon apartment where a salmon does your taxes.</p> </header> <article> <link rel="stylesheet" href="/assets/css/tom.css"> <link rel="stylesheet" href="/assets/css/memory.css"> <p class="tom-lede"> I have a long-running habit of memorising things that do not need memorising. Two of the techniques are below. The second one is why I can still list a shopping trip from three weeks ago. </p> <section class="mem-section" id="speed-game"> <h2>Speed memory</h2> <p class="mem-sub">Ten items. Seven seconds. Then write them down.</p> <fieldset class="tom-btn-row" style="border: 0; padding: 0; margin: 0.8rem 0 0"> <legend class="tom-screen-reader">What to memorise</legend> <label class="tom-chip"><input type="radio" name="speed-mode" value="digits" checked> Digits</label> <label class="tom-chip"><input type="radio" name="speed-mode" value="words"> Words</label> </fieldset> <div class="speed-stage" data-speed-stage=""> <p class="speed-idle"> Press start. Ten items appear for seven seconds, then vanish. Type back as many as you can, in order if you can manage it. You get two scores: how many landed in the right position, and how many you got at all. </p> </div> <div class="tom-btn-row"> <button type="button" class="tom-btn tom-btn-solid" data-speed-start="">Start</button> </div> <p class="tom-screen-reader" aria-live="polite" data-speed-live=""></p> </section> <noscript> <p class="tom-note"> <strong>The speed drill needs JavaScript.</strong> It runs entirely in your browser, with nothing sent anywhere, so with scripting off there is nothing to run. </p> </noscript> <section class="mem-section" id="palace"> <h2>The memory palace</h2> <p class="mem-sub"> Five things to remember, parked in five rooms of a flat that does not exist. The images are absurd on purpose. Absurd is the whole mechanism: a cow on a sofa sticks where a carton of milk slides straight off. </p> <div class="palace-frame"> <svg class="palace-svg" viewbox="0 0 640 420" role="img" aria-labelledby="palaceTitle palaceDesc"> <title id="palaceTitle">A cutaway cartoon apartment with five rooms</title> <desc id="palaceDesc">Five rooms seen from the side with the front wall removed. The hallway holds an upside-down umbrella with a goldfish in it. The kitchen holds a singing kettle balanced on a stack of batteries. The living room holds a cow surfing on the sofa. The bedroom holds a passport in sunglasses asleep on a pillow. The bathroom holds a salmon filling in a tax return in the bathtub.</desc> <g class="palace-shell"> <rect x="20" y="20" width="600" height="380" rx="12"></rect> <line x1="20" y1="205" x2="620" y2="205"></line> <line x1="190" y1="20" x2="190" y2="205"></line> <line x1="410" y1="20" x2="410" y2="205"></line> <line x1="320" y1="205" x2="320" y2="400"></line> </g> <g class="palace-rooms"> <g class="palace-room" data-room="hallway"> <rect x="24" y="24" width="162" height="177" rx="8"></rect> <text class="palace-room-name" x="34" y="44">Hallway</text> </g> <g class="palace-room" data-room="kitchen"> <rect x="194" y="24" width="212" height="177" rx="8"></rect> <text class="palace-room-name" x="204" y="44">Kitchen</text> </g> <g class="palace-room" data-room="living"> <rect x="414" y="24" width="202" height="177" rx="8"></rect> <text class="palace-room-name" x="424" y="44">Living room</text> </g> <g class="palace-room" data-room="bedroom"> <rect x="324" y="209" width="292" height="187" rx="8"></rect> <text class="palace-room-name" x="334" y="229">Bedroom</text> </g> <g class="palace-room" data-room="bathroom"> <rect x="24" y="209" width="292" height="187" rx="8"></rect> <text class="palace-room-name" x="34" y="229">Bathroom</text> </g> </g> <path class="palace-route" d="M105 188 H590 V382 H170"></path> <g class="palace-thing" data-room="hallway" transform="translate(105 118)"> <path class="pt-fill-blue" d="M-52 -22 A 52 52 0 0 0 52 -22 Z"></path> <path class="pt-water" d="M-44 -6 q22 10 44 0 q22 -10 44 0 l-9 20 q-4 8 -12 8 l-46 0 q-8 0 -12 -8 Z"></path> <path class="pt-stroke" d="M0 30 L0 56 q0 11 -12 11 q-10 0 -10 -8"></path> <g transform="translate(6 8)"> <path class="pt-fill-orange" d="M-13 0 q7 -9 17 0 q-7 9 -17 0 Z"></path> <path class="pt-fill-orange-dark" d="M-13 0 l-7 -6 l0 12 Z"></path> <circle class="pt-eye" cx="0" cy="-1.4" r="1.4"></circle> </g> <circle class="pt-bubble" cx="-14" cy="-8" r="2.5"></circle> <circle class="pt-bubble" cx="-8" cy="-16" r="1.8"></circle> </g> <g class="palace-thing" data-room="kitchen" transform="translate(300 128)"> <g transform="translate(0 30)"> <rect class="pt-fill-green" x="-26" y="-10" width="52" height="18" rx="3"></rect> <rect class="pt-fill-green" x="-26" y="-30" width="52" height="18" rx="3"></rect> <rect class="pt-fill-green" x="-26" y="-50" width="52" height="18" rx="3"></rect> <rect class="pt-cap" x="-6" y="-54" width="12" height="5" rx="1.5"></rect> <text class="pt-tiny" x="0" y="-16" text-anchor="middle">AA</text> <text class="pt-tiny" x="0" y="-36" text-anchor="middle">AA</text> </g> <g transform="translate(0 -32)"> <path class="pt-fill-amber" d="M-24 10 q0 -22 24 -22 q24 0 24 22 q0 10 -7 10 l-34 0 q-7 0 -7 -10 Z"></path> <path class="pt-stroke" d="M24 -3 q15 2 13 13 q-2 9 -13 9"></path> <path class="pt-stroke" d="M-7 -13 q7 -8 14 0"></path> </g> <g class="pt-notes"> <path class="pt-fill-cream" d="M38 -52 l2 -20 l8 -2 l-2 20 Z"></path> <circle class="pt-fill-cream" cx="36" cy="-50" r="4"></circle> <path class="pt-fill-cream" d="M54 -34 l2 -16 l7 -2 l-2 16 Z"></path> <circle class="pt-fill-cream" cx="52" cy="-32" r="3.4"></circle> </g> </g> <g class="palace-thing" data-room="living" transform="translate(515 128) scale(1.08)"> <rect class="pt-fill-violet" x="-62" y="22" width="124" height="28" rx="8"></rect> <rect class="pt-fill-violet-dark" x="-57" y="8" width="28" height="18" rx="6"></rect> <rect class="pt-fill-violet-dark" x="-21" y="8" width="28" height="18" rx="6"></rect> <rect class="pt-fill-violet-dark" x="15" y="8" width="28" height="18" rx="6"></rect> <path class="pt-wave" d="M-68 50 q22 -16 44 0 t44 0 t44 0"></path> <g transform="translate(2 -16)"> <path class="pt-legs" d="M-18 8 V26 M-6 12 V28 M7 12 V28 M19 8 V26"></path> <ellipse class="pt-fill-cream" cx="0" cy="-2" rx="27" ry="15"></ellipse> <ellipse class="pt-spot" cx="-12" cy="-6" rx="8" ry="5.5"></ellipse> <ellipse class="pt-spot" cx="7" cy="3" rx="6" ry="4.5"></ellipse> <path class="pt-fill-cream" d="M-24 -12 l-10 -12 l3 13 Z"></path> <circle class="pt-fill-cream" cx="28" cy="-4" r="11.5"></circle> <ellipse class="pt-muzzle" cx="33" cy="1" rx="7" ry="5"></ellipse> <circle class="pt-eye" cx="27" cy="-8" r="2"></circle> <path class="pt-fill-cream" d="M19 -13 l-7 -7 l10 2 Z"></path> <path class="pt-horn" d="M31 -14 q4 -6 8 -3"></path> </g> </g> <g class="palace-thing" data-room="bedroom" transform="translate(470 300) scale(1.22)"> <rect class="pt-fill-wood" x="-74" y="4" width="148" height="30" rx="6"></rect> <rect class="pt-fill-cream" x="-74" y="-10" width="148" height="18" rx="5"></rect> <rect class="pt-headboard" x="-82" y="-40" width="14" height="52" rx="4"></rect> <rect class="pt-pillow" x="-64" y="-26" width="52" height="24" rx="9"></rect> <g transform="translate(-38 -16) rotate(-8)"> <rect class="pt-fill-navy" x="-17" y="-12" width="34" height="24" rx="3"></rect> <circle class="pt-gold" cx="0" cy="-4" r="4.5"></circle> <rect class="pt-gold" x="-8" y="4" width="16" height="2.5" rx="1.2"></rect> <g transform="translate(0 -4)"> <rect class="pt-shades" x="-11" y="-3" width="9" height="6" rx="2"></rect> <rect class="pt-shades" x="2" y="-3" width="9" height="6" rx="2"></rect> <path class="pt-shades-bridge" d="M-2 0 h4"></path> </g> </g> <text class="pt-zzz" x="-6" y="-34">z</text> <text class="pt-zzz pt-zzz-sm" x="8" y="-46">z</text> </g> <g class="palace-thing" data-room="bathroom" transform="translate(170 302) scale(1.22)"> <path class="pt-fill-blue" d="M-72 -6 q0 -10 10 -10 l124 0 q10 0 10 10 l-7 32 q-2 10 -12 10 l-106 0 q-10 0 -12 -10 Z"></path> <circle class="pt-fill-cream" cx="-62" cy="-22" r="4.5"></circle> <path class="pt-stroke" d="M-62 -27 q0 -14 12 -16"></path> <g transform="translate(-2 8)"> <path class="pt-fill-orange" d="M-30 0 q16 -18 36 0 q-16 18 -36 0 Z"></path> <path class="pt-fill-orange-dark" d="M-30 0 l-13 -10 l0 20 Z"></path> <circle class="pt-eye" cx="-2" cy="-2.5" r="2.1"></circle> <path class="pt-fin" d="M-12 -8 l5 -9 l6 7"></path> </g> <g transform="translate(40 -8) rotate(10)"> <rect class="pt-fill-cream" x="-14" y="-19" width="28" height="36" rx="2.5"></rect> <g class="pt-form-lines"> <path d="M-8 -11 h16"></path> <path d="M-8 -4 h16"></path> <path d="M-8 3 h10"></path> </g> <path class="pt-form-sign" d="M-8 11 h9"></path> </g> <circle class="pt-bubble" cx="-44" cy="-2" r="3"></circle> <circle class="pt-bubble" cx="-36" cy="-10" r="2"></circle> </g> <g class="palace-walker" transform="translate(105 188)"> <circle class="palace-walker-halo" r="18"></circle> <circle class="palace-walker-dot" r="6.5"></circle> </g> </svg> </div> <div class="palace-caption" data-palace-caption="" aria-live="polite"></div> <ul class="palace-steps" data-palace-steps=""></ul> <div class="tom-btn-row"> <button type="button" class="tom-btn" data-palace-prev="">Back a room</button> <button type="button" class="tom-btn" data-palace-next="">Next room</button> <button type="button" class="tom-btn tom-btn-solid" data-palace-walk="">Walk it for me</button> </div> <div class="palace-quiz" data-palace-quiz=""> <h3>Now put it back</h3> <p class="tom-small tom-muted"> Do not scroll up. Walk the flat in your head, room by room, and write down what you found in each one. </p> <ol class="palace-quiz-list" data-palace-quiz-list=""></ol> <div class="tom-btn-row"> <button type="button" class="tom-btn tom-btn-solid" data-palace-check="">Check my list</button> </div> <p class="tom-small" data-palace-result="" aria-live="polite"></p> </div> </section> <noscript> <p class="tom-note"> <strong>The palace walk needs JavaScript too.</strong> The list it stores is umbrella, batteries, milk, passport, taxes, in that order: hallway, kitchen, living room, bedroom, bathroom. </p> </noscript> <h2>Why the silly pictures work</h2> <p> The method is old and the mechanism is dull: human memory is much better at places and pictures than at lists. So you stop storing the list and start storing a walk. You already know the layout of somewhere, so the order comes for free, and each room gives you one hook to hang something on. </p> <p> The images have to be ridiculous, because ordinary ones do not stick. A carton of milk on a sofa is forgettable. A cow surfing the sofa is not. The strangeness is the retrieval cue, and it is why every stop in the flat above is doing something it has no business doing. </p> <p class="tom-small tom-muted"> All illustrations here are original SVG, drawn for this page. Both widgets run client-side with no network requests and no storage. </p> <script src="/assets/js/memory.js" defer></script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Xiaoyu Tom Chen. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Illustrations and maps on this site are original. No analytics, no trackers. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-research",
+          title: "research",
+          description: "What I work on, at the level a CV would put it.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Things I have built end to end, from idea to shipped product.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "Full citations, newest first.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, research, publications and skills.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-where-i-have-been",
+              title: "Where I have been",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/map/";
+              },
+            },{id: "dropdown-guess-the-language",
+              title: "Guess the language",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/languages/";
+              },
+            },{id: "dropdown-memory-corner",
+              title: "Memory corner",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/memory/";
+              },
+            },{id: "nav-personal",
+          title: "personal",
+          description: "Life outside the lab and the codebase.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/personal/";
+          },
+        },{id: "nav-contact",
+          title: "contact",
+          description: "Email is the reliable one.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/contact/";
+          },
+        },{id: "projects-muted",
+          title: 'Muted',
+          description: "AI-first English speaking practice app, solo-built end to end",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/muted/";
+            },},{id: "projects-hoopalytics",
+          title: 'Hoopalytics',
+          description: "Sorting-algorithm comparison engine over scraped NBA data",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hoopalytics/";
+            },},{id: "projects-cretor-mandarin-counter-speech-dataset",
+          title: 'CRetor: Mandarin Counter-Speech Dataset',
+          description: "An Elo-based scoring model for LLM fine-tuning on counter-speech",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cretor/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%78%69%61%6F%79%63@%75%6D%69%63%68.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/Xiaoyu-Ch", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/xiaoyu-tom-chen-658251335", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

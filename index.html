@@ -1,132 +1,32 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Xiaoyu Tom Chen </title> <meta name="author" content="Xiaoyu Tom Chen"> <meta name="description" content="Xiaoyu (Tom) Chen. CS student at the University of Michigan building production ML/systems infrastructure and LLM agent safety research. "> <meta name="keywords" content="computer science, machine learning, systems, LLM safety, research, software engineer"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Xiaoyu Tom Chen </title> <meta name="author" content="Xiaoyu Tom Chen"> <meta name="description" content="Xiaoyu (Tom) Chen. CS at the University of Michigan, working on ML safety and reliability, and building the systems that test it. "> <meta name="keywords" content="computer science, machine learning, ML safety, agent safety, systems reliability, research, software engineer"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
-</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AD&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiaoyu-ch.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="/assets/css/fonts.css"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AD&lt;/text&gt;&lt;/svg&gt;"> <link rel="apple-touch-icon" href="/assets/img/prof_pic.png?v=46a48bc7ff32549e9910e21d6550adcc"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://xiaoyu-ch.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">personal </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">Xiaoyu</span> Tom Chen </h1> <p class="desc">CS student, University of Michigan. Building production ML/systems infrastructure and LLM agent safety research.</p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/assets/img/prof_pic.jpg?v=974957d202f671e4fa6700c04e68deae" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> <div class="more-info"> <p>Ann Arbor, MI</p> </div> </div> <div class="clearfix"> <p>I’m a CS student at the University of Michigan (transferred from the University of Florida), building production ML and systems infrastructure. I think of myself as an engineer first: most of my time goes into shipping and stress-testing real systems, not just writing about them.</p> <p>Right now I split my time between two things. At the <a href="https://tea.ece.ufl.edu/" rel="external nofollow noopener" target="_blank">TEA Lab</a> (UF ECE, Citi-sponsored), I own the full data pipeline for FinVault, an LLM agentic-safety benchmark: single-pass logprob and entropy extraction on Qwen3-8B, run at scale (1,064 cases across 31 scenarios) on dual-H200 HPC. At <a href="https://orderlab.io/" rel="external nofollow noopener" target="_blank">OrderLab</a> (University of Michigan EECS), I work on AdaptGuard, an evaluation harness for adaptive safety policies in coding agents, targeting OSDI 2026.</p> <p>Outside the lab, I build things end to end: <a href="/projects/muted/">Muted</a>, an AI-first English speaking practice app I designed, built, and shipped solo; <a href="/projects/hoopalytics/">Hoopalytics</a>, a sorting-algorithm comparison engine over scraped NBA data; and <a href="/projects/cretor/">CRetor</a>, a Mandarin counter-speech dataset built for LLM fine-tuning.</p> <p>I’m interested in both PhD study and industry roles in software engineering and ML infrastructure. My <a href="/cv/">CV</a> has the full picture, and my <a href="/publications/">publications</a> page has citations. If you want to reach me, <a href="mailto:xiaoyc@umich.edu">email</a> is best, or find me on <a href="https://github.com/Xiaoyu-Ch" rel="external nofollow noopener" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/xiaoyu-tom-chen-658251335" rel="external nofollow noopener" target="_blank">LinkedIn</a>.</p> <div class="about-cube-wrap" aria-hidden="true"> <div class="about-cube-scene"> <div class="about-cube"> <div class="about-cube-face about-cube-front"></div> <div class="about-cube-face about-cube-back"></div> <div class="about-cube-face about-cube-right"></div> <div class="about-cube-face about-cube-left"></div> <div class="about-cube-face about-cube-top"></div> <div class="about-cube-face about-cube-bottom"></div> </div> </div> </div> <style>
-  .about-cube-wrap {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 0.5rem;
-    opacity: 0.7;
-  }
-  .about-cube-scene {
-    width: 70px;
-    height: 70px;
-    perspective: 500px;
-  }
-  .about-cube {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: about-cube-spin 16s linear infinite;
-  }
-  .about-cube-face {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    border: 1px solid var(--global-theme-color);
-    background: transparent;
-  }
-  .about-cube-front { transform: translateZ(35px); }
-  .about-cube-back { transform: translateZ(-35px) rotateY(180deg); }
-  .about-cube-right { transform: rotateY(90deg) translateZ(35px); }
-  .about-cube-left { transform: rotateY(-90deg) translateZ(35px); }
-  .about-cube-top { transform: rotateX(90deg) translateZ(35px); }
-  .about-cube-bottom { transform: rotateX(-90deg) translateZ(35px); }
-  @keyframes about-cube-spin {
-    from { transform: rotateX(0deg) rotateY(0deg); }
-    to { transform: rotateX(360deg) rotateY(360deg); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .about-cube {
-      animation: none;
-      transform: rotateX(-20deg) rotateY(30deg);
-    }
-  }
-</style> <style>
-  @keyframes about-egg-bounce {
-    0% { transform: translateX(-10vw) translateY(0); }
-    15% { transform: translateX(15vw) translateY(-38vh); }
-    30% { transform: translateX(35vw) translateY(0); }
-    45% { transform: translateX(55vw) translateY(-22vh); }
-    60% { transform: translateX(75vw) translateY(0); }
-    75% { transform: translateX(95vw) translateY(-10vh); }
-    100% { transform: translateX(115vw) translateY(0); }
-  }
-  .about-egg-ball {
-    position: fixed;
-    left: 0;
-    bottom: 15vh;
-    font-size: 2.5rem;
-    z-index: 9999;
-    pointer-events: none;
-    animation: about-egg-bounce 2.2s ease-in-out forwards;
-  }
-  .about-egg-toast {
-    position: fixed;
-    left: 50%;
-    bottom: 8vh;
-    transform: translateX(-50%);
-    background: var(--global-card-bg-color);
-    color: var(--global-text-color);
-    border: 1px solid var(--global-theme-color);
-    border-radius: 0.5rem;
-    padding: 0.6rem 1.1rem;
-    font-size: 0.9rem;
-    z-index: 9999;
-    opacity: 0;
-    animation: about-egg-toast-fade 3.5s ease-in-out forwards;
-  }
-  @keyframes about-egg-toast-fade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    85% { opacity: 1; }
-    100% { opacity: 0; }
-  }
-</style> <script>
-  console.log("%cLooking at the source? Good instinct.", "font-size: 14px; font-weight: bold;");
-  console.log("This site is a Jekyll/al-folio build. Source: https://github.com/Xiaoyu-Ch/Xiaoyu-Ch.github.io");
-  console.log("If you're hiring or admitting PhD students: xiaoyc@umich.edu");
-  console.log("(Psst: there's also a Konami code on this page.)");
-
-  (function () {
-    var code = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
-    var pos = 0;
-    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    document.addEventListener("keydown", function (e) {
-      var key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-      pos = key === code[pos] ? pos + 1 : (key === code[0] ? 1 : 0);
-      if (pos === code.length) {
-        pos = 0;
-        fire();
-      }
-    });
-
-    function fire() {
-      var toast = document.createElement("div");
-      toast.className = "about-egg-toast";
-      toast.textContent = "Merge sort still beats heap sort though.";
-      document.body.appendChild(toast);
-      setTimeout(function () { toast.remove(); }, 3600);
-
-      if (reduceMotion) return;
-      var ball = document.createElement("div");
-      ball.className = "about-egg-ball";
-      ball.textContent = "🏀";
-      ball.setAttribute("aria-hidden", "true");
-      document.body.appendChild(ball);
-      setTimeout(function () { ball.remove(); }, 2300);
-    }
-  })();
-</script> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <p>No news so far...</p> </div> <h2> <a href="/blog/" style="color: inherit">latest posts</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> </table> </div> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"></ol> </div> <div class="social"> <div class="contact-icons"> <a href="/assets/pdf/resume.pdf" title="Cv pdf"><i class="ai ai-cv"></i></a> <a href="mailto:xiaoyc@umich.edu" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/Xiaoyu-Ch" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/xiaoyu-tom-chen-658251335" title="Linkedin username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div> <div class="contact-note">Email is the most reliable way to reach me. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Xiaoyu Tom Chen. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">playground </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/map/">Where I have been</a> <a class="dropdown-item " href="/languages/">Guess the language</a> <a class="dropdown-item " href="/memory/">Memory corner</a> </div> </li> <li class="nav-item "> <a class="nav-link" href="/personal/">personal </a> </li> <li class="nav-item "> <a class="nav-link" href="/contact/">contact </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">Xiaoyu</span> Tom Chen </h1> <p class="desc">ML safety and reliability, and the engineering to go with it.</p> </header> <article> <div class="clearfix"> <link rel="stylesheet" href="/assets/css/tom.css"> <div class="tom-portrait"> <img src="/assets/img/avatar.svg" width="800" height="800" fetchpriority="high" alt="An original illustrated monogram: a globe grid crossed by a dotted four-stop route, with the letters X and C below it."> <p class="tom-portrait-meta"> Ann Arbor, Michigan<br> <a href="mailto:xiaoyc@umich.edu">xiaoyc@umich.edu</a> </p> </div> <p class="tom-lede"> I work on why machine learning systems fail, and I build the systems that let me find out. Research half of the time, shipping the other half. </p> <p>I am a Computer Science undergraduate at the <strong>University of Michigan</strong>, transferred from the <strong>University of Florida</strong>, graduating May 2028. Two research threads keep me busy. At the <a href="https://tea.ece.ufl.edu/" rel="external nofollow noopener" target="_blank">TEA Lab</a> (UF ECE, Citi-sponsored) I own the data pipeline for an LLM agent safety benchmark. At <a href="https://orderlab.io/" rel="external nofollow noopener" target="_blank">OrderLab</a> (UMich EECS) I work on AdaptGuard, an evaluation of sandbox policies for coding agents. Both come down to the same question: when an agent looks like it is behaving, how do you tell whether it actually is?</p> <p>The other half is building. <a href="/projects/muted/">Muted</a> is an AI-first English speaking practice app I designed, built and shipped on my own. <a href="/projects/hoopalytics/">Hoopalytics</a> is a sorting-algorithm comparison engine over scraped NBA data. <a href="/projects/cretor/">CRetor</a> is a Mandarin counter-speech dataset built for fine-tuning. I like the parts where a clean idea meets a messy constraint, like discovering a voice API that works beautifully and costs far too much.</p> <p>Away from the terminal I collect languages, seven of them at wildly uneven levels, and I have a long-running habit of memorising things that do not need memorising.</p> <div class="tom-hero-links"> <a class="tom-btn tom-btn-solid" href="/research/">Research</a> <a class="tom-btn" href="/projects/">Projects</a> <a class="tom-btn" href="/cv/">CV</a> </div> <h2 id="have-a-go">Have a go at something</h2> <p class="tom-muted tom-small">Three small things that run entirely in your browser. No accounts, no network calls, no tracking.</p> <div class="tom-cards"> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-map.svg" width="600" height="280" fetchpriority="high" alt="A stylised world map with a dotted route linking four marked stops."> <div class="tom-card-body"> <h3><a href="/map/">Where I have been</a></h3> <p>Four cities, one route, drawn as a map you can click through.</p> <ul class="tom-chips"> <li class="tom-chip">Original SVG</li> <li class="tom-chip">No map tiles</li> </ul> </div> </article> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-languages.svg" width="600" height="280" loading="lazy" alt="Seven speech bubbles, each holding a letter from a different writing system."> <div class="tom-card-body"> <h3><a href="/languages/">Guess the language</a></h3> <p>Ten rounds across my seven languages. There are traps. German <em>Gift</em> is one.</p> <ul class="tom-chips"> <li class="tom-chip">10 rounds</li> <li class="tom-chip tom-chip-warm">Harder than it looks</li> </ul> </div> </article> <article class="tom-card"> <img class="tom-card-art" src="/assets/svg/card-memory.svg" width="600" height="280" loading="lazy" alt="A cutaway cartoon apartment with four rooms, each holding one odd object."> <div class="tom-card-body"> <h3><a href="/memory/">Memory corner</a></h3> <p>A speed recall drill, and a cartoon apartment where a salmon does your taxes.</p> <ul class="tom-chips"> <li class="tom-chip">Timed</li> <li class="tom-chip">Memory palace</li> </ul> </div> </article> </div> <h2 id="recent">Recent</h2> <ol class="tom-timeline"> <li class="tom-timeline-item tom-timeline-move"> <span class="tom-timeline-when">August 2026</span> <span class="tom-timeline-text">Started at the <strong>University of Michigan</strong> in Ann Arbor as a transfer student in Computer Science, expected May 2028. </span> </li> <li class="tom-timeline-item tom-timeline-research"> <span class="tom-timeline-when">July 2026</span> <span class="tom-timeline-text">Joined <strong>OrderLab</strong> (UMich EECS, Prof. Ryan Huang) as an undergraduate researcher on AdaptGuard, an evaluation of sandbox policies for coding agents. </span> </li> <li class="tom-timeline-item tom-timeline-research"> <span class="tom-timeline-when">May 2026</span> <span class="tom-timeline-text">Joined the <strong>TEA Lab</strong> at UF ECE as a research assistant on a Citi-sponsored LLM agent safety benchmark, owning the data pipeline. </span> </li> <li class="tom-timeline-item tom-timeline-school"> <span class="tom-timeline-when">May 2026</span> <span class="tom-timeline-text">Finished coursework at the <strong>University of Florida</strong> before transferring. </span> </li> <li class="tom-timeline-item tom-timeline-research"> <span class="tom-timeline-when">February 2026</span> <span class="tom-timeline-text">Joined the <strong>Computer Vision and Sensing Lab</strong> at UF ABE, building the perception pipeline for an autonomous bamboo-harvesting robot. </span> </li> </ol> <p class="tom-small"><a href="/news/">The whole timeline</a></p> <script src="/assets/js/about.js" defer></script> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div id="chen2026doctor" class="col-sm-10"> <div class="title">A Doctor Dialogue Model Based on Vector Quantisation</div> <div class="author"> <em>Xiaoyu Chen</em> </div> <div class="periodical"> <em>In AICCONF 2026 (IEEE SMC)</em>, 2026 </div> <div class="periodical"> Oral presentation </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">chen2026doctor</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Doctor Dialogue Model Based on Vector Quantisation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chen, Xiaoyu}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{AICCONF 2026 (IEEE SMC)}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Prague, Czech Republic}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Oral presentation}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="chen2024theory" class="col-sm-10"> <div class="title">From Theory to Reality: The Quest for Gravitational Waves</div> <div class="author"> <em>Xiaoyu Chen</em> </div> <div class="periodical"> <em>In CONF-CIAP 2024 (Theoretical and Natural Science)</em>, 2024 </div> <div class="periodical"> Indexed in Scopus and CPCI </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">chen2024theory</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{From Theory to Reality: The Quest for Gravitational Waves}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chen, Xiaoyu}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{CONF-CIAP 2024 (Theoretical and Natural Science)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Indexed in Scopus and CPCI}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="chen2025cretor" class="col-sm-10"> <div class="title">CRetor: A Mandarin Counter-Speech Dataset Annotated for Rhetorical Strategy</div> <div class="author"> <em>Xiaoyu Chen</em> and others </div> <div class="periodical"> 2025 </div> <div class="periodical"> Submitted to ACL Rolling Review (ARR) </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@unpublished</span><span class="p">{</span><span class="nl">chen2025cretor</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{CRetor: A Mandarin Counter-Speech Dataset Annotated for Rhetorical Strategy}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Chen, Xiaoyu and others}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Submitted to ACL Rolling Review (ARR)}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:xiaoyc@umich.edu" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/Xiaoyu-Ch" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/xiaoyu-tom-chen-658251335" title="Linkedin username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div> <div class="contact-note">Email is the most reliable way to reach me. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Xiaoyu Tom Chen. Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Illustrations and maps on this site are original. No analytics, no trackers. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
-</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
     addBackToTop();
   </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
 // get the ninja-keys element
@@ -140,35 +40,56 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-cv",
-          title: "CV",
-          description: "Education, experience, research, publications, and skills.",
+  },{id: "nav-research",
+          title: "research",
+          description: "What I work on, at the level a CV would put it.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "nav-publications",
-          title: "publications",
-          description: "full citations, in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
+            window.location.href = "/research/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Things I&#39;ve built end to end, from idea to shipped product.",
+          description: "Things I have built end to end, from idea to shipped product.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-blog",
-          title: "blog",
-          description: "",
+        },{id: "nav-publications",
+          title: "publications",
+          description: "Full citations, newest first.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/publications/";
           },
-        },{id: "nav-personal",
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Education, experience, research, publications and skills.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-where-i-have-been",
+              title: "Where I have been",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/map/";
+              },
+            },{id: "dropdown-guess-the-language",
+              title: "Guess the language",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/languages/";
+              },
+            },{id: "dropdown-memory-corner",
+              title: "Memory corner",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/memory/";
+              },
+            },{id: "nav-personal",
           title: "personal",
           description: "Life outside the lab and the codebase.",
           section: "Navigation",
@@ -177,7 +98,7 @@ ninja.data = [{
           },
         },{id: "nav-contact",
           title: "contact",
-          description: "Get in touch.",
+          description: "Email is the reliable one.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/contact/";
@@ -198,13 +119,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/cretor/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/resume.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
