@@ -48,6 +48,13 @@ html[data-theme="dark"] {
   --global-hover-text-color: #0c1a18;
 }
 
+/* The theme sets `display` on classes used by these components, which beats the
+   user-agent `[hidden] { display: none }` rule. Restate it with weight. */
+
+[hidden] {
+  display: none !important;
+}
+
 /* ------------------------------------------------------------ typography */
 
 .post-title,
