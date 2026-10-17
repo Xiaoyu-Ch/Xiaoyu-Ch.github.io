@@ -1,0 +1,30 @@
+# The three interactive pages, rendered as cards on both /about/ and /playground/.
+# Keeping the list here means the two pages cannot drift apart.
+
+- title: Where I have been
+  url: /map/
+  art: /assets/svg/card-map.svg
+  alt: A stylised world map with a dotted route linking four marked stops.
+  blurb: Four cities, one route, drawn as a map you can click through.
+  chips:
+    - Original SVG
+    - No map tiles
+
+- title: Guess the language
+  url: /languages/
+  art: /assets/svg/card-languages.svg
+  alt: Seven speech bubbles, each holding a letter from a different writing system.
+  blurb: Ten rounds across my seven languages. There are traps. German <em>Gift</em> is one.
+  chips:
+    - 10 rounds
+  warm_chips:
+    - Harder than it looks
+
+- title: Memory corner
+  url: /memory/
+  art: /assets/svg/card-memory.svg
+  alt: A cutaway cartoon apartment with four rooms, each holding one odd object.
+  blurb: A speed recall drill, and a cartoon apartment where a salmon does your taxes.
+  chips:
+    - Timed
+    - Memory palace

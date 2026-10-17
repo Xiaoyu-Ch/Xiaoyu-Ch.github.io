@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false # no posts yet; put it back in the navbar once there is one
 nav_order: 4
 pagination:
   enabled: true

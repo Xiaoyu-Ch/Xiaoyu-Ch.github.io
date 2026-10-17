@@ -2,14 +2,16 @@
 layout: page
 permalink: /publications/
 title: publications
-description: full citations, in reversed chronological order.
+description: Full citations, newest first.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
-<!-- _pages/publications.md -->
+<link rel="stylesheet" href="{{ '/assets/css/tom.css' | relative_url }}">
 
-<!-- Bibsearch Feature -->
+<p class="tom-lede">
+Three entries, two published and one under review. Every author list is as submitted.
+</p>
 
 {% include bib_search.liquid %}
 

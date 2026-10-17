@@ -9,11 +9,11 @@ last_name: Chen
 contact_note: >
   Email is the most reliable way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Xiaoyu (Tom) Chen. CS student at the University of Michigan building production ML/systems infrastructure and LLM agent safety research.
+  Xiaoyu (Tom) Chen. CS at the University of Michigan, working on ML safety and reliability, and building the systems that test it.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: computer science, machine learning, systems, LLM safety, research, software engineer # add your own keywords or leave empty
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>, hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Illustrations and maps on this site are original. No analytics, no trackers.
+keywords: computer science, machine learning, ML safety, agent safety, systems reliability, research, software engineer # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧭 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

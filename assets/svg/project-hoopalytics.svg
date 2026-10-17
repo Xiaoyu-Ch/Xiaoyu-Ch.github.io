@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="600" height="280" role="img" aria-label="A basketball beside two columns of bars, one sorted and one still unsorted.">
+  <defs>
+    <linearGradient id="hoBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1724" />
+      <stop offset="1" stop-color="#2b1d1c" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="280" fill="url(#hoBg)" />
+
+  <!-- basketball, drawn from scratch -->
+  <g transform="translate(104 140)">
+    <circle r="62" fill="#e07a3c" />
+    <g fill="none" stroke="#2a1410" stroke-width="4">
+      <circle r="62" />
+      <path d="M0 -62 V62" />
+      <path d="M-62 0 H62" />
+      <path d="M-44 -44 Q0 0 -44 44" />
+      <path d="M44 -44 Q0 0 44 44" />
+    </g>
+  </g>
+
+  <!-- left column: unsorted -->
+  <g transform="translate(214 58)">
+    <text x="0" y="-12" fill="#8da4b0" font-family="Roboto, system-ui, sans-serif" font-size="12" letter-spacing="1">UNSORTED</text>
+    <g fill="#6b5f7d">
+      <rect x="0" y="0" width="92" height="16" rx="4" />
+      <rect x="0" y="26" width="46" height="16" rx="4" />
+      <rect x="0" y="52" width="124" height="16" rx="4" />
+      <rect x="0" y="78" width="68" height="16" rx="4" />
+      <rect x="0" y="104" width="106" height="16" rx="4" />
+      <rect x="0" y="130" width="30" height="16" rx="4" />
+      <rect x="0" y="156" width="82" height="16" rx="4" />
+    </g>
+  </g>
+
+  <!-- arrow -->
+  <path d="M368 140 h40" stroke="#f2b55c" stroke-width="4" stroke-linecap="round" />
+  <path d="M400 130 l14 10 l-14 10 Z" fill="#f2b55c" />
+
+  <!-- right column: sorted -->
+  <g transform="translate(428 58)">
+    <text x="0" y="-12" fill="#f2b55c" font-family="Roboto, system-ui, sans-serif" font-size="12" letter-spacing="1">SORTED</text>
+    <g fill="#6fd6c4">
+      <rect x="0" y="0" width="124" height="16" rx="4" />
+      <rect x="0" y="26" width="106" height="16" rx="4" />
+      <rect x="0" y="52" width="92" height="16" rx="4" />
+      <rect x="0" y="78" width="82" height="16" rx="4" />
+      <rect x="0" y="104" width="68" height="16" rx="4" />
+      <rect x="0" y="130" width="46" height="16" rx="4" />
+      <rect x="0" y="156" width="30" height="16" rx="4" />
+    </g>
+  </g>
+</svg>

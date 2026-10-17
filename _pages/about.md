@@ -58,44 +58,19 @@ I have a long-running habit of memorising things that do not need memorising.
 <p class="tom-muted tom-small">Three small things that run entirely in your browser. No accounts, no network calls, no tracking.</p>
 
 <div class="tom-cards">
-  <article class="tom-card">
-    <img class="tom-card-art" src="{{ '/assets/svg/card-map.svg' | relative_url }}" width="600" height="280"
-         alt="A stylised globe with a dotted route linking four marked stops.">
-    <div class="tom-card-body">
-      <h3><a href="{{ '/map/' | relative_url }}">Where I have been</a></h3>
-      <p>Four cities, one route, drawn as a map you can click through.</p>
-      <ul class="tom-chips">
-        <li class="tom-chip">Original SVG</li>
-        <li class="tom-chip">No map tiles</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="tom-card">
-    <img class="tom-card-art" src="{{ '/assets/svg/card-languages.svg' | relative_url }}" width="600" height="280"
-         alt="Seven speech bubbles, each holding a letter from a different writing system.">
-    <div class="tom-card-body">
-      <h3><a href="{{ '/languages/' | relative_url }}">Guess the language</a></h3>
-      <p>Ten rounds across my seven languages. There are traps. German <em>Gift</em> is one.</p>
-      <ul class="tom-chips">
-        <li class="tom-chip">10 rounds</li>
-        <li class="tom-chip tom-chip-warm">Harder than it looks</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="tom-card">
-    <img class="tom-card-art" src="{{ '/assets/svg/card-memory.svg' | relative_url }}" width="600" height="280"
-         alt="A cutaway cartoon apartment with four rooms, each holding one odd object.">
-    <div class="tom-card-body">
-      <h3><a href="{{ '/memory/' | relative_url }}">Memory corner</a></h3>
-      <p>A speed recall drill, and a cartoon apartment where a salmon does your taxes.</p>
-      <ul class="tom-chips">
-        <li class="tom-chip">Timed</li>
-        <li class="tom-chip">Memory palace</li>
-      </ul>
-    </div>
-  </article>
+  {% for item in site.data.playground %}
+    <article class="tom-card">
+      <img class="tom-card-art" src="{{ item.art | relative_url }}" width="600" height="280" loading="lazy" alt="{{ item.alt }}">
+      <div class="tom-card-body">
+        <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+        <p>{{ item.blurb }}</p>
+        <ul class="tom-chips">
+          {% for chip in item.chips %}<li class="tom-chip">{{ chip }}</li>{% endfor %}
+          {% for chip in item.warm_chips %}<li class="tom-chip tom-chip-warm">{{ chip }}</li>{% endfor %}
+        </ul>
+      </div>
+    </article>
+  {% endfor %}
 </div>
 
 <h2 id="recent">Recent</h2>
